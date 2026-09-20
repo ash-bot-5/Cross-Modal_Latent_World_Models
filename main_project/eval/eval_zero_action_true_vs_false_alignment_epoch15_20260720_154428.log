@@ -1,0 +1,71 @@
+Logging to /home/ashwink/Documents/swms/SWM_copy/eval/eval_zero_action_true_vs_false_alignment_epoch15_20260720_154428.log
+Device: cuda
+
+Checkpoint: /home/ashwink/Documents/swms/SWM_copy/training/checkpoints_clip_full_finetuned_wider_hl/epoch_015.pt
+  epoch=15  step=13728
+
+Parsing model identifier. Schema: None, Identifier: ViT-L-14
+Loaded built-in ViT-L-14 model config.
+Instantiating model architecture: CLIP
+Loading full pretrained weights from: /home/ashwink/.cache/huggingface/hub/models--laion--CLIP-ViT-L-14-DataComp.XL-s13B-b90K/snapshots/84c9828e63dc9a9351d1fe637c346d4c1c4db341/open_clip_pytorch_model.bin
+Final image preprocessing configuration set: {'size': (224, 224), 'mode': 'RGB', 'mean': (0.48145466, 0.4578275, 0.40821073), 'std': (0.26862954, 0.26130258, 0.27577711), 'interpolation': 'bicubic', 'resize_mode': 'shortest', 'fill_color': 0}
+Model ViT-L-14 creation process complete.
+Parsing tokenizer identifier. Schema: None, Identifier: ViT-L-14
+Attempting to load config from built-in: ViT-L-14
+Using default SimpleTokenizer.
+Sampled 5 val episodes (seed=123) out of 820:
+  blocktoblock_1304_success.pkl
+  blocktoblock_2545_success.pkl
+  blocktoblock_1480_success.pkl
+  blocktoblock_805_success.pkl
+  blocktoblock_3377_success.pkl
+
+Block names (8): ['blue_cube', 'blue_moon', 'green_cube', 'green_star', 'red_moon', 'red_pentagon', 'yellow_pentagon', 'yellow_star']
+
+Encoding 2048 unique statement strings with CLIP text tower ...
+Vocab tensor shape: (8, 8, 8, 2, 2, 768)
+
+=== Episode blocktoblock_1304_success.pkl  (T=35) ===
+  TRUE  statements: count=  15680  mean=-0.2754  std=0.2995  min=-0.6841  max=+0.9142
+  FALSE statements: count=  15680  mean=-0.4048  std=0.1473  min=-0.6595  max=+0.6931
+  win_rate (cos_true > cos_false): 0.8490
+  mean margin (cos_true - cos_false): +0.1294
+
+=== Episode blocktoblock_2545_success.pkl  (T=55) ===
+  TRUE  statements: count=  24640  mean=-0.2429  std=0.2920  min=-0.7288  max=+0.9603
+  FALSE statements: count=  24640  mean=-0.3759  std=0.1330  min=-0.7389  max=+0.9619
+  win_rate (cos_true > cos_false): 0.8674
+  mean margin (cos_true - cos_false): +0.1330
+
+=== Episode blocktoblock_1480_success.pkl  (T=23) ===
+  TRUE  statements: count=  10304  mean=-0.3053  std=0.3348  min=-0.7385  max=+0.9585
+  FALSE statements: count=  10304  mean=-0.4507  std=0.1814  min=-0.7357  max=+0.8740
+  win_rate (cos_true > cos_false): 0.8826
+  mean margin (cos_true - cos_false): +0.1453
+
+=== Episode blocktoblock_805_success.pkl  (T=42) ===
+  TRUE  statements: count=  18816  mean=-0.2405  std=0.3133  min=-0.7722  max=+0.9599
+  FALSE statements: count=  18816  mean=-0.4019  std=0.1054  min=-0.7767  max=+0.0339
+  win_rate (cos_true > cos_false): 0.8994
+  mean margin (cos_true - cos_false): +0.1613
+
+=== Episode blocktoblock_3377_success.pkl  (T=85) ===
+  TRUE  statements: count=  38080  mean=-0.2583  std=0.3022  min=-0.7201  max=+0.9523
+  FALSE statements: count=  38080  mean=-0.3989  std=0.1328  min=-0.7400  max=+0.9303
+  win_rate (cos_true > cos_false): 0.8462
+  mean margin (cos_true - cos_false): +0.1406
+
+=== Summary across all 5 episodes ===
+episode                                   true_mean false_mean  win_rate    margin
+blocktoblock_1304_success.pkl               -0.2754    -0.4048    0.8490    0.1294
+blocktoblock_2545_success.pkl               -0.2429    -0.3759    0.8674    0.1330
+blocktoblock_1480_success.pkl               -0.3053    -0.4507    0.8826    0.1453
+blocktoblock_805_success.pkl                -0.2405    -0.4019    0.8994    0.1613
+blocktoblock_3377_success.pkl               -0.2583    -0.3989    0.8462    0.1406
+
+Pooled TRUE  statements: count=  107520  mean=-0.2587  std=0.3054  min=-0.7722  max=+0.9603
+Pooled FALSE statements: count=  107520  mean=-0.4000  std=0.1376  min=-0.7767  max=+0.9619
+Overall win_rate (cos_true > cos_false): 0.8643
+Overall mean margin (cos_true - cos_false): +0.1413
+
+Full log written to /home/ashwink/Documents/swms/SWM_copy/eval/eval_zero_action_true_vs_false_alignment_epoch15_20260720_154428.log

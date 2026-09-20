@@ -1,0 +1,140 @@
+_wandb:
+    value:
+        cli_version: 0.28.0
+        e:
+            anw9lx0ujr8zsk8z6k484ysrip5kxatt:
+                args:
+                    - --train
+                    - --checkpoint_dir
+                    - checkpoints_clip_full_finetuned_wider_hl
+                codePath: SWM_copy/training/dynamics_model_clip_full_finetune.py
+                codePathLocal: dynamics_model_clip_full_finetune.py
+                cpu_count: 16
+                cpu_count_logical: 24
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "1967317549056"
+                        used: "1440646557696"
+                email: ashwinkr@sas.upenn.edu
+                executable: /home/ashwink/Documents/swms/.venv/bin/python
+                git:
+                    commit: 8fd057882c3cffd89cc9f4ef529ab595f612d2f1
+                    remote: https://github.com/ash-bot-5/SWM_copy.git
+                gpu: NVIDIA GeForce RTX 3090 Ti
+                gpu_count: 2
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "25757220864"
+                      name: NVIDIA GeForce RTX 3090 Ti
+                      uuid: GPU-7f656875-d5ea-3c22-f9b2-c71c8106db21
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "25757220864"
+                      name: NVIDIA GeForce RTX 3090 Ti
+                      uuid: GPU-1eb68860-7232-542b-e54b-4e17175bc661
+                host: jupiter
+                memory:
+                    total: "67274842112"
+                os: Linux-6.8.0-124-generic-x86_64-with-glibc2.35
+                program: /home/ashwink/Documents/swms/SWM_copy/training/dynamics_model_clip_full_finetune.py
+                python: CPython 3.10.12
+                root: /home/ashwink/Documents/swms/SWM_copy/training
+                startedAt: "2026-07-17T23:34:24.227550Z"
+                writerId: anw9lx0ujr8zsk8z6k484ysrip5kxatt
+        m: []
+        python_version: 3.10.12
+        t:
+            "1":
+                - 1
+                - 2
+                - 3
+                - 5
+                - 11
+                - 12
+                - 41
+                - 49
+                - 53
+                - 63
+                - 71
+            "2":
+                - 1
+                - 2
+                - 3
+                - 5
+                - 11
+                - 12
+                - 41
+                - 49
+                - 53
+                - 63
+                - 71
+            "3":
+                - 2
+                - 3
+                - 13
+                - 16
+            "4": 3.10.12
+            "5": 0.28.0
+            "6": 4.57.1
+            "12": 0.28.0
+            "13": linux-x86_64
+changed_weight:
+    value: 1
+data_parallel_device_ids:
+    value:
+        - 0
+        - 1
+effective_batch_size:
+    value: 256
+finetune_scope:
+    value: full_image_text
+full_probe_every:
+    value: 5
+global_table_size:
+    value: 1792
+grad_accum_steps:
+    value: 1
+grad_accum_triggered:
+    value: false
+held_out_pair:
+    value: blue_moon->red_pentagon (forward only)
+image_lr:
+    value: 1e-06
+micro_batch_size:
+    value: 256
+mixed_precision:
+    value: bf16
+mlp_lr:
+    value: 0.0003
+n_held_out_pair_episodes:
+    value: 77
+n_train_episodes:
+    value: 4180
+n_val_episodes:
+    value: 820
+negative_count:
+    value: 448
+num_epochs:
+    value: 16
+probe_n_episodes:
+    value: 75
+probe_seed:
+    value: 123
+temperature:
+    value: 0.1
+text_lr:
+    value: 1e-06
+total_steps:
+    value: 13728
+val_seed:
+    value: 0
+warmup_floor:
+    value: 50
+warmup_frac:
+    value: 0.05
+warmup_steps:
+    value: 686
+weight_decay_policy:
+    value: exclude bias/LayerNorm/embedding from decay on both towers

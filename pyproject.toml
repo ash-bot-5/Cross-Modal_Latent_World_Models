@@ -36,6 +36,9 @@ dependencies = [
     "sentencepiece",
     "accelerate",
     "tf-agents>=0.19.0",
+    "peft>=0.19.1",
+    "umap-learn>=0.5.12",
+    "open-clip-torch>=3.3.0",
 ]
 
 [tool.hatch.build.targets.wheel]

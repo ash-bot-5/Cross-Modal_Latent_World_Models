@@ -1,0 +1,1 @@
+{"_step":204800,"dataset/n_samples":261685,"train/loss":1.5207875967025757,"train/mean_pairwise_cosine":0.2985670268535614,"train/grad_norm":2.706564426422119,"step":204599,"_runtime":13591,"_timestamp":1.7829468853499522e+09,"epoch":199,"dataset/batches_per_epoch":1023,"train/epoch_loss":1.596794372779533,"_wandb":{"runtime":13591}}

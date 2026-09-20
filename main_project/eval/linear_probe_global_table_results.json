@@ -1,0 +1,82 @@
+[
+  {
+    "checkpoint": "pretrained",
+    "probe": "probe_ab",
+    "n_train": 1440,
+    "n_val": 352,
+    "train_acc": 0.9444444444444444,
+    "val_acc": 0.9176136363636364,
+    "val_auc": 0.98046875,
+    "out_path": "/home/ashwink/Documents/swms/SWM_copy/eval/pretrained_probe_ab_margin_histogram.png"
+  },
+  {
+    "checkpoint": "pretrained",
+    "probe": "probe_peg",
+    "n_train": 1344,
+    "n_val": 448,
+    "train_acc": 0.9434523809523809,
+    "val_acc": 0.9174107142857143,
+    "val_auc": 0.9825813137755102,
+    "out_path": "/home/ashwink/Documents/swms/SWM_copy/eval/pretrained_probe_peg_margin_histogram.png"
+  },
+  {
+    "checkpoint": "epoch_000.pt",
+    "probe": "probe_ab",
+    "n_train": 1440,
+    "n_val": 352,
+    "train_acc": 1.0,
+    "val_acc": 1.0,
+    "val_auc": 1.0,
+    "out_path": "/home/ashwink/Documents/swms/SWM_copy/eval/epoch_000.pt_probe_ab_margin_histogram.png"
+  },
+  {
+    "checkpoint": "epoch_000.pt",
+    "probe": "probe_peg",
+    "n_train": 1344,
+    "n_val": 448,
+    "train_acc": 1.0,
+    "val_acc": 0.8392857142857143,
+    "val_auc": 1.0,
+    "out_path": "/home/ashwink/Documents/swms/SWM_copy/eval/epoch_000.pt_probe_peg_margin_histogram.png"
+  },
+  {
+    "checkpoint": "epoch_001.pt",
+    "probe": "probe_ab",
+    "n_train": 1440,
+    "n_val": 352,
+    "train_acc": 1.0,
+    "val_acc": 1.0,
+    "val_auc": 1.0,
+    "out_path": "/home/ashwink/Documents/swms/SWM_copy/eval/epoch_001.pt_probe_ab_margin_histogram.png"
+  },
+  {
+    "checkpoint": "epoch_001.pt",
+    "probe": "probe_peg",
+    "n_train": 1344,
+    "n_val": 448,
+    "train_acc": 1.0,
+    "val_acc": 0.9196428571428571,
+    "val_auc": 1.0,
+    "out_path": "/home/ashwink/Documents/swms/SWM_copy/eval/epoch_001.pt_probe_peg_margin_histogram.png"
+  },
+  {
+    "checkpoint": "epoch_008.pt",
+    "probe": "probe_ab",
+    "n_train": 1440,
+    "n_val": 352,
+    "train_acc": 1.0,
+    "val_acc": 1.0,
+    "val_auc": 1.0,
+    "out_path": "/home/ashwink/Documents/swms/SWM_copy/eval/epoch_008.pt_probe_ab_margin_histogram.png"
+  },
+  {
+    "checkpoint": "epoch_008.pt",
+    "probe": "probe_peg",
+    "n_train": 1344,
+    "n_val": 448,
+    "train_acc": 1.0,
+    "val_acc": 1.0,
+    "val_auc": 1.0,
+    "out_path": "/home/ashwink/Documents/swms/SWM_copy/eval/epoch_008.pt_probe_peg_margin_histogram.png"
+  }
+]

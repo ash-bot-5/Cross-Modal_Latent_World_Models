@@ -1,0 +1,26 @@
+[34m[1mwandb[0m: [33mWARNING[0m Symlinked 1 file into the W&B run directory; call wandb.save again to sync new files.
+[34m[1mwandb[0m: [33mWARNING[0m Symlinked 1 file into the W&B run directory; call wandb.save again to sync new files.
+[epoch 0] train_loss=1.4970 val_loss=0.7379 margin_subsample75=0.0942 progress_corr=0.4637 table_coverage=1.000
+[epoch 1] train_loss=0.4488 val_loss=0.6693 margin_subsample75=0.1593 progress_corr=0.5301 table_coverage=1.000
+[epoch 2] train_loss=0.2662 val_loss=0.6927 margin_subsample75=0.2015 progress_corr=0.5565 table_coverage=1.000
+[epoch 3] train_loss=0.1769 val_loss=0.7166 margin_subsample75=0.2191 progress_corr=0.5289 table_coverage=1.000
+[epoch 4] train_loss=0.1297 val_loss=0.7272 margin_subsample75=0.2330 progress_corr=0.5490 table_coverage=1.000
+[epoch 5] train_loss=0.0972 val_loss=0.7772 margin_subsample75=0.2403 progress_corr=0.5519 table_coverage=1.000
+[epoch 6] train_loss=0.0754 val_loss=0.7859 margin_subsample75=0.2478 progress_corr=0.5578 table_coverage=1.000
+[epoch 7] train_loss=0.0594 val_loss=0.7556 margin_subsample75=0.2499 progress_corr=0.5440 table_coverage=1.000
+[epoch 8] train_loss=0.0491 val_loss=0.7634 margin_subsample75=0.2550 progress_corr=0.5427 table_coverage=1.000
+[epoch 9] train_loss=0.0414 val_loss=0.7551 margin_subsample75=0.2572 progress_corr=0.5533 table_coverage=1.000
+[epoch 10] train_loss=0.0358 val_loss=0.7772 margin_subsample75=0.2614 progress_corr=0.5516 table_coverage=1.000
+[epoch 11] train_loss=0.0308 val_loss=0.7743 margin_subsample75=0.2570 progress_corr=0.5615 table_coverage=1.000
+Traceback (most recent call last):
+  File "/home/ashwink/Documents/swms/SWM_copy/training/dynamics_model_clip_full_finetune_combined.py", line 1374, in <module>
+    train(micro_batch_size=args.micro_batch_size, num_workers=args.num_workers,
+  File "/home/ashwink/Documents/swms/SWM_copy/training/dynamics_model_clip_full_finetune_combined.py", line 1061, in train
+    if not torch.isfinite(loss):
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/ashwink/Documents/swms/SWM_copy/training/dynamics_model_clip_full_finetune_combined.py", line 1374, in <module>
+    train(micro_batch_size=args.micro_batch_size, num_workers=args.num_workers,
+  File "/home/ashwink/Documents/swms/SWM_copy/training/dynamics_model_clip_full_finetune_combined.py", line 1061, in train
+    if not torch.isfinite(loss):
+KeyboardInterrupt

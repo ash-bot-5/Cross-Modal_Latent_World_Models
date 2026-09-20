@@ -1,0 +1,84 @@
+2026-07-02 15:13:52.657371: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-07-02 15:13:52.660634: I external/local_xla/xla/tsl/cuda/cudart_stub.cc:32] Could not find cuda drivers on your machine, GPU will not be used.
+2026-07-02 15:13:52.667027: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1783030432.677434 3074438 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1783030432.680328 3074438 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2026-07-02 15:13:52.691501: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+pybullet build time: Jan 29 2025 23:16:28
+Checkpoint: /home/ashwink/Documents/swms/SWM_copy/checkpoints/epoch_199.pt
+Computing action stats from /home/ashwink/full_data_5000/langtable/demos/ ...
+  5000 episodes  |  action shape: (296685, 2)  |  lo=[-0.03372681140899658, -0.03493623435497284]  hi=[0.03496786952018738, 0.03494429588317871]
+Model loaded (epoch 199, step 204600)
+
+Episode: blocktoblock_2_success  |  T=71  |  eval timesteps: 63
+   t     d_pos     d_cur     d_neg   correct   sem_chgd  sentence(t)
+----------------------------------------------------------
+   0    0.8048    0.7126    1.0319      True       True  the yellow star is not touching the red moon. the peg is not touching the yellow star.
+   1    0.8025    0.7295    1.1382      True       True  the yellow star is not touching the red moon. the peg is not touching the yellow star.
+   2    0.9819    0.8918    1.1163      True       True  the yellow star is not touching the red moon. the peg is not touching the yellow star.
+   3    0.8560    0.8560    1.0606      True      False  the yellow star is not touching the red moon. the peg is not touching the yellow star.
+   4    0.9225    0.8346    1.0725      True       True  the yellow star is not touching the red moon. the peg is not touching the yellow star.
+   5    0.8308    0.8308    1.1068      True      False  the yellow star is not touching the red moon. the peg is not touching the yellow star.
+   6    0.8847    0.7989    1.0258      True       True  the yellow star is not touching the red moon. the peg is not touching the yellow star.
+   7    1.0714    0.9887    0.9688     False       True  the yellow star is not touching the red moon. the peg is not touching the yellow star.
+   8    1.1091    1.1091    0.9833     False      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+   9    0.8998    0.8998    1.1205      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  10    1.0470    1.0470    0.9779     False      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  11    1.0349    0.9963    1.2980      True       True  the yellow star is not touching the red moon. the peg is not touching the yellow star.
+  12    0.9331    0.9331    1.1373      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  13    0.9782    0.9390    1.1126      True       True  the yellow star is not touching the red moon. the peg is not touching the yellow star.
+  14    1.0329    1.0329    1.0542      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  15    0.7610    0.7610    1.2041      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  16    0.7734    0.7734    1.2862      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  17    0.8871    0.8871    1.0250      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  18    0.9687    0.9687    1.2870      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  19    0.7301    0.7301    0.9871      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  20    0.7955    0.7955    0.7774     False      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  21    0.8201    0.8201    0.9402      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  22    0.9560    0.9560    0.9592      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  23    1.0264    1.0264    0.9180     False      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  24    1.2642    1.2642    1.0742     False      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  25    0.5837    0.5837    0.9476      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  26    0.7440    0.7440    1.1539      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  27    0.9877    0.9877    1.0174      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  28    0.9143    0.9143    0.9954      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  29    1.1432    1.1432    1.1674      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  30    1.0964    1.0964    1.1017      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  31    1.1766    1.1766    1.1836      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  32    0.5163    0.5163    0.6395      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  33    1.0889    1.0889    1.0350     False      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  34    0.8670    0.8670    1.0124      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  35    1.0346    1.0346    1.0598      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  36    1.1173    1.1173    1.1246      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  37    1.0935    1.0935    1.0847     False      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  38    0.7643    0.7643    1.2838      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  39    1.0647    1.0647    1.1990      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  40    0.9706    0.9706    1.0888      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  41    1.0105    1.0105    1.0814      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  42    1.0167    1.0167    1.1569      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  43    0.7325    0.7325    0.8724      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  44    1.0038    1.0038    1.1570      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  45    1.1332    1.1332    1.1359      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  46    1.0923    1.0923    0.8197     False      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  47    1.1135    1.1135    1.3004      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  48    1.0091    1.0091    1.3821      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  49    0.9175    0.9175    1.1526      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  50    0.9851    0.9851    1.2019      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  51    1.0084    1.0084    1.2855      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  52    1.1702    1.1702    1.0156     False      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  53    1.0007    1.0007    0.9132     False      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  54    1.0061    1.0061    0.9535     False      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  55    0.9831    0.9831    1.0495      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  56    0.5689    0.5689    0.8504      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  57    0.9057    0.9057    1.2203      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  58    0.8042    0.8042    1.2965      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  59    0.7828    0.7828    1.0982      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  60    0.8449    0.8449    1.1653      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  61    0.9018    0.9018    1.2330      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+  62    0.6685    0.6685    1.0582      True      False  the yellow star is not touching the red moon. the peg is touching the yellow star.
+----------------------------------------------------------
+
+Summary: 51/63 correct (d_pos < d_neg)
+  sem_changed=True subset: 7/8

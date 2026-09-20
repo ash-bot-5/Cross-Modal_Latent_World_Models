@@ -1,0 +1,27 @@
+[epoch 0] train_loss=3.6345 val_loss=3.6725 margin_subsample75=0.1054 progress_corr=0.4913
+[epoch 1] train_loss=2.7546 val_loss=4.2585 margin_subsample75=0.1532 progress_corr=0.6033
+Exception ignored in: <function Image.__del__ at 0x788bb669add0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/tkinter/__init__.py", line 4056, in __del__
+    self.tk.call('image', 'delete', self.name)
+RuntimeError: main thread is not in main loop
+Exception ignored in: <function Variable.__del__ at 0x788bbc6d31c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/tkinter/__init__.py", line 388, in __del__
+    if self._tk.getboolean(self._tk.call("info", "exists", self._name)):
+RuntimeError: main thread is not in main loop
+Exception ignored in: <function Variable.__del__ at 0x788bbc6d31c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/tkinter/__init__.py", line 388, in __del__
+    if self._tk.getboolean(self._tk.call("info", "exists", self._name)):
+RuntimeError: main thread is not in main loop
+Exception ignored in: <function Variable.__del__ at 0x788bbc6d31c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/tkinter/__init__.py", line 388, in __del__
+    if self._tk.getboolean(self._tk.call("info", "exists", self._name)):
+RuntimeError: main thread is not in main loop
+Exception ignored in: <function Variable.__del__ at 0x788bbc6d31c0>
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/tkinter/__init__.py", line 388, in __del__
+    if self._tk.getboolean(self._tk.call("info", "exists", self._name)):
+RuntimeError: main thread is not in main loop

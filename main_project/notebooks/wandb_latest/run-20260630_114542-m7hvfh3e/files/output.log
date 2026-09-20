@@ -1,0 +1,57 @@
+epoch 0  avg_loss=5.4526
+epoch 1  avg_loss=5.3943
+epoch 2  avg_loss=5.3303
+Exception ignored in: <function _xla_gc_callback at 0x717d05916e60>
+Traceback (most recent call last):
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/jax/_src/lib/__init__.py", line 96, in _xla_gc_callback
+    def _xla_gc_callback(*args):
+KeyboardInterrupt:
+epoch 3  avg_loss=5.2313
+Traceback (most recent call last):
+  File "/home/ashwink/Documents/swms/SWM_copy/notebooks/dynamics_model.py", line 176, in <module>
+    train(resume_from="checkpoints/latest.pt", num_epochs=100)
+  File "/home/ashwink/Documents/swms/SWM_copy/notebooks/dynamics_model.py", line 128, in train
+    z_pred = model(z_t, actions)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/SWM_copy/notebooks/dynamics_model.py", line 44, in forward
+    global_cond = self.action_encoder(actions.flatten(1))
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/ashwink/Documents/swms/SWM_copy/notebooks/dynamics_model.py", line 176, in <module>
+    train(resume_from="checkpoints/latest.pt", num_epochs=100)
+  File "/home/ashwink/Documents/swms/SWM_copy/notebooks/dynamics_model.py", line 128, in train
+    z_pred = model(z_t, actions)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/SWM_copy/notebooks/dynamics_model.py", line 44, in forward
+    global_cond = self.action_encoder(actions.flatten(1))
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/container.py", line 253, in forward
+    input = module(input)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 134, in forward
+    return F.linear(input, self.weight, self.bias)
+KeyboardInterrupt

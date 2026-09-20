@@ -1,0 +1,143 @@
+_wandb:
+    value:
+        cli_version: 0.28.0
+        e:
+            inwdwtpgv7r7j6dhycok0crf1rplnsh0:
+                args:
+                    - --train
+                codePath: SWM_copy/training/dynamics_model_clip_lora_finetune.py
+                codePathLocal: dynamics_model_clip_lora_finetune.py
+                cpu_count: 16
+                cpu_count_logical: 24
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "1967317549056"
+                        used: "1388119789568"
+                email: ashwinkr@sas.upenn.edu
+                executable: /home/ashwink/Documents/swms/.venv/bin/python
+                git:
+                    commit: 8fd057882c3cffd89cc9f4ef529ab595f612d2f1
+                    remote: https://github.com/ash-bot-5/SWM_copy.git
+                gpu: NVIDIA GeForce RTX 3090 Ti
+                gpu_count: 2
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "25757220864"
+                      name: NVIDIA GeForce RTX 3090 Ti
+                      uuid: GPU-7f656875-d5ea-3c22-f9b2-c71c8106db21
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "25757220864"
+                      name: NVIDIA GeForce RTX 3090 Ti
+                      uuid: GPU-1eb68860-7232-542b-e54b-4e17175bc661
+                host: jupiter
+                memory:
+                    total: "67275243520"
+                os: Linux-6.8.0-124-generic-x86_64-with-glibc2.35
+                program: /home/ashwink/Documents/swms/SWM_copy/training/dynamics_model_clip_lora_finetune.py
+                python: CPython 3.10.12
+                root: /home/ashwink/Documents/swms/SWM_copy/training
+                startedAt: "2026-07-14T20:39:16.747492Z"
+                writerId: inwdwtpgv7r7j6dhycok0crf1rplnsh0
+        m: []
+        python_version: 3.10.12
+        t:
+            "1":
+                - 1
+                - 2
+                - 3
+                - 5
+                - 11
+                - 12
+                - 41
+                - 49
+                - 53
+                - 63
+                - 71
+            "2":
+                - 1
+                - 2
+                - 3
+                - 5
+                - 11
+                - 12
+                - 41
+                - 49
+                - 53
+                - 63
+                - 71
+            "3":
+                - 5
+                - 13
+                - 14
+                - 16
+                - 62
+            "4": 3.10.12
+            "5": 0.28.0
+            "6": 4.57.1
+            "12": 0.28.0
+            "13": linux-x86_64
+changed_weight:
+    value: 1
+data_parallel_device_ids:
+    value:
+        - 0
+        - 1
+effective_batch_size:
+    value: 256
+full_probe_every:
+    value: 5
+grad_accum_steps:
+    value: 1
+grad_accum_triggered:
+    value: false
+lora_alpha:
+    value: 32
+lora_dropout:
+    value: 0.2
+lora_layers:
+    value: all_24
+lora_projections:
+    value:
+        - q
+        - k
+        - v
+        - out
+lora_r:
+    value: 16
+lora_scaling:
+    value: 8
+lora_scope:
+    value: image_encoder_only
+lr_lora:
+    value: 0.0001
+lr_mlp:
+    value: 0.0003
+micro_batch_size:
+    value: 256
+mixed_precision:
+    value: bf16
+n_train_episodes:
+    value: 4250
+n_val_episodes:
+    value: 750
+negative_count:
+    value: 448
+num_epochs:
+    value: 15
+probe_n_episodes:
+    value: 75
+probe_seed:
+    value: 123
+temperature:
+    value: 0.1
+total_steps:
+    value: 13125
+val_seed:
+    value: 0
+wd_lora:
+    value: 0
+wd_mlp:
+    value: 0.01

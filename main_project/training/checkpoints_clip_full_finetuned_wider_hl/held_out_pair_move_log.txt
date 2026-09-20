@@ -1,0 +1,87 @@
+Held-out pair: blue_moon -> red_pentagon (forward direction only)
+
+Episodes moved train->val: 70
+  blocktoblock_1102_success.pkl
+  blocktoblock_1216_success.pkl
+  blocktoblock_121_success.pkl
+  blocktoblock_1228_success.pkl
+  blocktoblock_1247_success.pkl
+  blocktoblock_1257_success.pkl
+  blocktoblock_1392_success.pkl
+  blocktoblock_1456_success.pkl
+  blocktoblock_1494_success.pkl
+  blocktoblock_1579_success.pkl
+  blocktoblock_1596_success.pkl
+  blocktoblock_160_success.pkl
+  blocktoblock_166_success.pkl
+  blocktoblock_1772_success.pkl
+  blocktoblock_1821_success.pkl
+  blocktoblock_1962_success.pkl
+  blocktoblock_2084_success.pkl
+  blocktoblock_2113_success.pkl
+  blocktoblock_2148_success.pkl
+  blocktoblock_2167_success.pkl
+  blocktoblock_2201_success.pkl
+  blocktoblock_2206_success.pkl
+  blocktoblock_2243_success.pkl
+  blocktoblock_22_success.pkl
+  blocktoblock_2541_success.pkl
+  blocktoblock_2545_success.pkl
+  blocktoblock_2549_success.pkl
+  blocktoblock_2746_success.pkl
+  blocktoblock_2763_success.pkl
+  blocktoblock_2773_success.pkl
+  blocktoblock_2857_success.pkl
+  blocktoblock_2871_success.pkl
+  blocktoblock_2935_success.pkl
+  blocktoblock_2975_success.pkl
+  blocktoblock_3095_success.pkl
+  blocktoblock_3148_success.pkl
+  blocktoblock_3169_success.pkl
+  blocktoblock_3223_success.pkl
+  blocktoblock_3229_success.pkl
+  blocktoblock_3501_success.pkl
+  blocktoblock_3628_success.pkl
+  blocktoblock_3640_success.pkl
+  blocktoblock_3769_success.pkl
+  blocktoblock_379_success.pkl
+  blocktoblock_3846_success.pkl
+  blocktoblock_4027_success.pkl
+  blocktoblock_4150_success.pkl
+  blocktoblock_4362_success.pkl
+  blocktoblock_4462_success.pkl
+  blocktoblock_4487_success.pkl
+  blocktoblock_4506_success.pkl
+  blocktoblock_4620_success.pkl
+  blocktoblock_4660_success.pkl
+  blocktoblock_4807_success.pkl
+  blocktoblock_4813_success.pkl
+  blocktoblock_4929_success.pkl
+  blocktoblock_4932_success.pkl
+  blocktoblock_496_success.pkl
+  blocktoblock_552_success.pkl
+  blocktoblock_615_success.pkl
+  blocktoblock_616_success.pkl
+  blocktoblock_622_success.pkl
+  blocktoblock_638_success.pkl
+  blocktoblock_639_success.pkl
+  blocktoblock_671_success.pkl
+  blocktoblock_805_success.pkl
+  blocktoblock_856_success.pkl
+  blocktoblock_888_success.pkl
+  blocktoblock_953_success.pkl
+  blocktoblock_973_success.pkl
+
+Old train count: 4250
+Old val count:   750
+New train count: 4180
+New val count:   820
+
+Already in val before move (not moved, just logged): 7
+  blocktoblock_1967_success.pkl
+  blocktoblock_2554_success.pkl
+  blocktoblock_2718_success.pkl
+  blocktoblock_3125_success.pkl
+  blocktoblock_3_success.pkl
+  blocktoblock_4147_success.pkl
+  blocktoblock_69_success.pkl

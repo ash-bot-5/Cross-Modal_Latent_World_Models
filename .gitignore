@@ -145,6 +145,9 @@ cython_debug/
 # VS Code
 .vscode/
 
+# Claude Code local settings
+.claude/settings.local.json
+
 # Model checkpoints
 *.pth
 *.bin
@@ -163,5 +166,21 @@ datasets/
 logs/
 wandb/
 tensorboard/
+
+# Policy: everything is tracked EXCEPT (a) model-weight files (*.pt/*.pth/*.bin/*.ckpt above,
+# excluded by type regardless of size) and (b) individual files too large for GitHub (100MB
+# hard limit per file), listed explicitly below. Charts, JSON/CSV, small .npz, rollout videos,
+# and wandb run logs are all tracked. See ARTIFACTS.md.
+!main_project/**/*.log
+!wandb_archive/**/*.log
+# tiny vendored map/metadata files that happen to use the .pt extension (not model weights)
+!reference_repos_MPPI/**/*.pt
+
+# Oversized cached arrays (each 250MB-2GB) — regenerable by the scripts that wrote them
+main_project/eval/linear_probe_image_data.npz
+main_project/linear_probe_MLP_output_charts/ground_truth_data*.npz
+
+# Oversized wandb binary run log (113MB, exceeds GitHub's 100MB per-file limit)
+main_project/wandb_archive/run-20260701_121452-0tjfay81/run-0tjfay81.wandb
 
 uv.lock

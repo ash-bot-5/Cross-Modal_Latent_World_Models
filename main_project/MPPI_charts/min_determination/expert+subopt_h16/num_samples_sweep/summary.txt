@@ -1,0 +1,16 @@
+epoch 4 (/home/ashwink/Documents/swms/SWM_copy/training/checkpoints_clip_full_fine-tuned_with_subopt_data_h16) MPPI num_samples sweep
+action_horizon=16  n_planning_itrs=9  max_action_value=1.0  warm_start_std=0.1  seeds=[123, 124, 125, 126, 127]  mppi_temperature=0.01 fixed
+goal: the green cube is touching the blue moon. the peg is touching the green cube.
+
+ num_samples  per-seed cos_sim                             mean      std        var     best      ESS   disp_spr
+----------------------------------------------------------------------------------------------------------------
+         512  0.0253 -0.0080 0.0470 0.0512 0.0323      0.0295   0.0210   0.000442   0.0512    212.9     0.0971
+        1000  0.0484 0.0442 0.0516 0.0328 0.0474       0.0449   0.0065   0.000042   0.0516    387.4     0.0904
+        2000  0.0520 0.0513 0.0533 0.0141 0.0541       0.0450   0.0155   0.000239   0.0541    749.0     0.0712
+        4000  0.0404 0.0544 0.0537 0.0510 0.0578       0.0515   0.0059   0.000035   0.0578   1435.1     0.0951
+
+ESS = mean effective sample size 1/sum(w^2) across refit iterations, out of K;
+      ~K means the softmax averages over a near-tied population, ~1 means it collapsed onto
+      a single sample and could not explore further.
+NOTE: cos_sim here is the dynamics model's OWN predicted outcome (cost_fn = 1 - cos(model(...), z_sem)).
+      No env.step() is ever called -- nothing here is checked against a real rollout.

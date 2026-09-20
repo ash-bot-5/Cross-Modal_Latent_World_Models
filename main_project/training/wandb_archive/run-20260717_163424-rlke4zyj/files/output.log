@@ -1,0 +1,22 @@
+[34m[1mwandb[0m: [33mWARNING[0m Symlinked 1 file into the W&B run directory; call wandb.save again to sync new files.
+[34m[1mwandb[0m: [33mWARNING[0m Symlinked 1 file into the W&B run directory; call wandb.save again to sync new files.
+/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/numba/np/ufunc/parallel.py:373: NumbaWarning: The TBB threading layer requires TBB version 2021 update 6 or later i.e., TBB_INTERFACE_VERSION >= 12060. Found TBB_INTERFACE_VERSION = 12050. The TBB threading layer is disabled.
+  warnings.warn(problem)
+[epoch 0] train_loss=1.6446 val_loss=0.6384 margin_subsample75=0.0728 progress_corr=0.5230 table_coverage=1.000
+[epoch 1] train_loss=0.2797 val_loss=0.7385 margin_subsample75=0.1175 progress_corr=0.5891 table_coverage=1.000
+[epoch 2] train_loss=0.1301 val_loss=0.9358 margin_subsample75=0.1533 progress_corr=0.6421 table_coverage=1.000
+[epoch 3] train_loss=0.0759 val_loss=1.0480 margin_subsample75=0.1717 progress_corr=0.6465 table_coverage=1.000
+[epoch 4] train_loss=0.0481 val_loss=1.1786 margin_subsample75=0.1842 progress_corr=0.6511 table_coverage=1.000
+[epoch 5] train_loss=0.0324 val_loss=1.2082 margin_subsample75=0.1886 progress_corr=0.6439 table_coverage=1.000
+[epoch 6] train_loss=0.0233 val_loss=1.2422 margin_subsample75=0.1984 progress_corr=0.6469 table_coverage=1.000
+[epoch 7] train_loss=0.0181 val_loss=1.4790 margin_subsample75=0.2041 progress_corr=0.6380 table_coverage=1.000
+[epoch 8] train_loss=0.0148 val_loss=1.2485 margin_subsample75=0.2084 progress_corr=0.6313 table_coverage=1.000
+[epoch 9] train_loss=0.0124 val_loss=1.1086 margin_subsample75=0.2072 progress_corr=0.6387 table_coverage=1.000
+[epoch 10] train_loss=0.0110 val_loss=1.3503 margin_subsample75=0.2154 progress_corr=0.6310 table_coverage=1.000
+[epoch 11] train_loss=0.0101 val_loss=1.3168 margin_subsample75=0.2125 progress_corr=0.6152 table_coverage=1.000
+[epoch 12] train_loss=0.0100 val_loss=1.4520 margin_subsample75=0.2124 progress_corr=0.6197 table_coverage=1.000
+[epoch 13] train_loss=0.0094 val_loss=1.3814 margin_subsample75=0.2149 progress_corr=0.6284 table_coverage=1.000
+[epoch 14] train_loss=0.0099 val_loss=1.5019 margin_subsample75=0.2129 progress_corr=0.6235 table_coverage=1.000
+[epoch 15] train_loss=0.0092 val_loss=1.3996 margin_subsample75=0.2136 progress_corr=0.6254 table_coverage=1.000

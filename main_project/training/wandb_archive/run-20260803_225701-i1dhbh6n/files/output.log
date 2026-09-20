@@ -1,0 +1,31 @@
+[34m[1mwandb[0m: [33mWARNING[0m Symlinked 1 file into the W&B run directory; call wandb.save again to sync new files.
+[34m[1mwandb[0m: [33mWARNING[0m Symlinked 1 file into the W&B run directory; call wandb.save again to sync new files.
+[epoch 0] train_loss=1.8857 val_loss=0.9683 margin_subsample75=0.0743 progress_corr=0.4089 table_coverage=1.000
+[epoch 1] train_loss=0.5595 val_loss=0.9425 margin_subsample75=0.1232 progress_corr=0.4772 table_coverage=1.000
+[epoch 2] train_loss=0.3131 val_loss=0.9862 margin_subsample75=0.1584 progress_corr=0.5034 table_coverage=1.000
+[epoch 3] train_loss=0.2063 val_loss=1.0719 margin_subsample75=0.1843 progress_corr=0.5288 table_coverage=1.000
+[epoch 4] train_loss=0.1448 val_loss=1.0794 margin_subsample75=0.1966 progress_corr=0.5372 table_coverage=1.000
+Traceback (most recent call last):
+  File "/home/ashwink/Documents/swms/SWM_copy/training/dynamics_model_clip_full_finetune_combined_horizon16.py", line 1453, in <module>
+    train(micro_batch_size=args.micro_batch_size,
+  File "/home/ashwink/Documents/swms/SWM_copy/training/dynamics_model_clip_full_finetune_combined_horizon16.py", line 1135, in train
+    (loss / grad_accum_steps).backward()
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/_tensor.py", line 631, in backward
+    torch.autograd.backward(
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/autograd/__init__.py", line 379, in backward
+    _engine_run_backward(
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/autograd/graph.py", line 882, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/ashwink/Documents/swms/SWM_copy/training/dynamics_model_clip_full_finetune_combined_horizon16.py", line 1453, in <module>
+    train(micro_batch_size=args.micro_batch_size,
+  File "/home/ashwink/Documents/swms/SWM_copy/training/dynamics_model_clip_full_finetune_combined_horizon16.py", line 1135, in train
+    (loss / grad_accum_steps).backward()
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/_tensor.py", line 631, in backward
+    torch.autograd.backward(
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/autograd/__init__.py", line 379, in backward
+    _engine_run_backward(
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/autograd/graph.py", line 882, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt

@@ -1,0 +1,18 @@
+epoch 10 (checkpoints_clip_full_fine-tuned_with_subopt_data_h16) MPPI temperature sweep
+action_horizon=16  n_planning_itrs=9  max_action_value=1.0  warm_start_std=0.1  seeds=[123, 124, 125, 126, 127]  K=512 fixed
+goal: the green cube is touching the blue moon. the peg is touching the green cube.
+
+ temperature  per-seed cos_sim                             mean      std        var     best      ESS   disp_spr
+----------------------------------------------------------------------------------------------------------------
+       0.001  0.0987 0.0815 0.1124 0.1284 0.2134       0.1269   0.0459   0.002111   0.2134    362.6     0.1119
+       0.003  0.1043 0.1828 0.1874 0.1311 0.2621       0.1735   0.0543   0.002946   0.2621    274.5     0.0949
+        0.01  0.2415 0.2830 0.2340 0.2454 0.2613       0.2531   0.0174   0.000304   0.2830    198.2     0.0433
+        0.03  0.2646 0.2827 0.2731 0.2822 0.2791       0.2763   0.0068   0.000046   0.2827    190.0     0.0534
+         0.1  0.2284 0.2111 0.1992 0.2131 0.2209       0.2145   0.0098   0.000096   0.2284    205.9     0.0557
+         0.3  0.6468 0.6514 0.6363 0.6270 0.6374       0.6398   0.0085   0.000073   0.6514    371.6     0.0829
+
+ESS = mean effective sample size 1/sum(w^2) across refit iterations, out of K;
+      ~K means the softmax averages over a near-tied population, ~1 means it collapsed onto
+      a single sample and could not explore further.
+NOTE: cos_sim here is the dynamics model's OWN predicted outcome (cost_fn = 1 - cos(model(...), z_sem)).
+      No env.step() is ever called -- nothing here is checked against a real rollout.

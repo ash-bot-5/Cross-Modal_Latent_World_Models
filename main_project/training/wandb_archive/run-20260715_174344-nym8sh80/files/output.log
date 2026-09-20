@@ -1,0 +1,15 @@
+[34m[1mwandb[0m: [33mWARNING[0m Symlinked 1 file into the W&B run directory; call wandb.save again to sync new files.
+[34m[1mwandb[0m: [33mWARNING[0m Symlinked 1 file into the W&B run directory; call wandb.save again to sync new files.
+/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/umap/umap_.py:1952: UserWarning: n_jobs value 1 overridden to 1 by setting random_state. Use no seed for parallelism.
+  warn(
+/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/numba/np/ufunc/parallel.py:373: NumbaWarning: The TBB threading layer requires TBB version 2021 update 6 or later i.e., TBB_INTERFACE_VERSION >= 12060. Found TBB_INTERFACE_VERSION = 12050. The TBB threading layer is disabled.
+  warnings.warn(problem)
+[epoch 0] train_loss=1.4918 val_loss=0.6031 margin_subsample75=0.0760 progress_corr=0.5080 table_coverage=1.000
+[epoch 1] train_loss=0.2546 val_loss=0.7092 margin_subsample75=0.1169 progress_corr=0.5611 table_coverage=1.000
+[epoch 2] train_loss=0.1244 val_loss=0.7442 margin_subsample75=0.1398 progress_corr=0.5787 table_coverage=1.000
+[epoch 3] train_loss=0.0756 val_loss=1.1620 margin_subsample75=0.1556 progress_corr=0.5993 table_coverage=1.000
+[epoch 4] train_loss=0.0516 val_loss=1.2991 margin_subsample75=0.1699 progress_corr=0.5963 table_coverage=1.000
+[epoch 5] train_loss=0.0363 val_loss=1.1863 margin_subsample75=0.1732 progress_corr=0.6187 table_coverage=1.000
+[epoch 6] train_loss=0.0260 val_loss=1.1228 margin_subsample75=0.1853 progress_corr=0.6172 table_coverage=1.000
+[epoch 7] train_loss=0.0204 val_loss=1.5246 margin_subsample75=0.1866 progress_corr=0.6261 table_coverage=1.000
+[epoch 8] train_loss=0.0165 val_loss=1.4987 margin_subsample75=0.1941 progress_corr=0.6213 table_coverage=1.000

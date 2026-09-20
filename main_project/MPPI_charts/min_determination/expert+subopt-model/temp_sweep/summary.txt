@@ -1,0 +1,18 @@
+epoch 11 MPPI softmax-temperature sweep
+K=512  n_planning_itrs=9  max_action_value=1.0  warm_start_std=0.1  seeds=[123, 124, 125, 126, 127]
+ref near-perfect chunk cos_sim = 0.6388  (the target to converge toward)
+
+    temp  per-seed cos_sim                             mean      std        var     best    vs_ref      ESS   disp_spr
+----------------------------------------------------------------------------------------------------------------------
+   0.001  -0.0495 0.0050 -0.0404 -0.0535 -0.0310  -0.0339   0.0209   0.000438   0.0050   -0.6338    433.2     0.0623
+   0.003  0.2544 0.1789 -0.0357 0.0638 0.0505      0.1024   0.1022   0.010442   0.2544   -0.3844    110.5     0.0437
+    0.01 *0.5630 0.6311 0.6286 0.5079 0.6020       0.5865   0.0463   0.002147   0.6311   -0.0076    321.3     0.0400
+    0.03  0.5362 0.6366 0.4686 0.4872 0.5769       0.5411   0.0610   0.003718   0.6366   -0.0022    378.7     0.0317
+     0.1  0.6534 0.6573 0.6593 0.6540 0.6560       0.6560   0.0022   0.000005   0.6593   +0.0205    321.1     0.0143
+     0.3  0.6204 0.6391 0.6136 0.6251 0.6298       0.6256   0.0086   0.000074   0.6391   +0.0003    376.1     0.0372
+
+* = baseline (the value mppi_global_or_local_min.py used)
+ESS = mean effective sample size 1/sum(w^2) across refit iterations, out of K=512;
+      ~K means the softmax averages over a near-tied population, ~1 means it collapsed onto
+      a single sample and could not explore further.
+vs_ref = best-seed cos_sim minus the reference chunk's cos_sim (0 = matched it).

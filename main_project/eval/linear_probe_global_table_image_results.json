@@ -1,0 +1,82 @@
+[
+  {
+    "checkpoint": "pretrained",
+    "probe": "probe_ab",
+    "n_train": 9565,
+    "n_val": 2502,
+    "train_acc": 0.6648196549921589,
+    "val_acc": 0.6658673061550759,
+    "val_auc": 0.6925376237280696,
+    "out_path": "/home/ashwink/Documents/swms/SWM_copy/eval/pretrained_probe_ab_image_margin_histogram.png"
+  },
+  {
+    "checkpoint": "pretrained",
+    "probe": "probe_peg",
+    "n_train": 9127,
+    "n_val": 2940,
+    "train_acc": 0.7201709214418758,
+    "val_acc": 0.604421768707483,
+    "val_auc": 0.7091944570501618,
+    "out_path": "/home/ashwink/Documents/swms/SWM_copy/eval/pretrained_probe_peg_image_margin_histogram.png"
+  },
+  {
+    "checkpoint": "epoch_000.pt",
+    "probe": "probe_ab",
+    "n_train": 9565,
+    "n_val": 2502,
+    "train_acc": 0.7794040773653946,
+    "val_acc": 0.7937649880095923,
+    "val_auc": 0.8098959355978793,
+    "out_path": "/home/ashwink/Documents/swms/SWM_copy/eval/epoch_000.pt_probe_ab_image_margin_histogram.png"
+  },
+  {
+    "checkpoint": "epoch_000.pt",
+    "probe": "probe_peg",
+    "n_train": 9127,
+    "n_val": 2940,
+    "train_acc": 0.8830941163580585,
+    "val_acc": 0.5170068027210885,
+    "val_auc": 0.822340660249869,
+    "out_path": "/home/ashwink/Documents/swms/SWM_copy/eval/epoch_000.pt_probe_peg_image_margin_histogram.png"
+  },
+  {
+    "checkpoint": "epoch_001.pt",
+    "probe": "probe_ab",
+    "n_train": 9565,
+    "n_val": 2502,
+    "train_acc": 0.8009409304756926,
+    "val_acc": 0.7969624300559552,
+    "val_auc": 0.7939663436550743,
+    "out_path": "/home/ashwink/Documents/swms/SWM_copy/eval/epoch_001.pt_probe_ab_image_margin_histogram.png"
+  },
+  {
+    "checkpoint": "epoch_001.pt",
+    "probe": "probe_peg",
+    "n_train": 9127,
+    "n_val": 2940,
+    "train_acc": 0.8850662868412402,
+    "val_acc": 0.5785714285714286,
+    "val_auc": 0.8457154211242851,
+    "out_path": "/home/ashwink/Documents/swms/SWM_copy/eval/epoch_001.pt_probe_peg_image_margin_histogram.png"
+  },
+  {
+    "checkpoint": "epoch_008.pt",
+    "probe": "probe_ab",
+    "n_train": 9565,
+    "n_val": 2502,
+    "train_acc": 0.8143230527966545,
+    "val_acc": 0.7529976019184652,
+    "val_auc": 0.781464755546829,
+    "out_path": "/home/ashwink/Documents/swms/SWM_copy/eval/epoch_008.pt_probe_ab_image_margin_histogram.png"
+  },
+  {
+    "checkpoint": "epoch_008.pt",
+    "probe": "probe_peg",
+    "n_train": 9127,
+    "n_val": 2940,
+    "train_acc": 0.8914210583981593,
+    "val_acc": 0.6329931972789116,
+    "val_auc": 0.8297588811805972,
+    "out_path": "/home/ashwink/Documents/swms/SWM_copy/eval/epoch_008.pt_probe_peg_image_margin_histogram.png"
+  }
+]

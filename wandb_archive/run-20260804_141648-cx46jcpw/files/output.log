@@ -1,0 +1,23 @@
+[34m[1mwandb[0m: [33mWARNING[0m Symlinked 1 file into the W&B run directory; call wandb.save again to sync new files.
+[34m[1mwandb[0m: [33mWARNING[0m Symlinked 1 file into the W&B run directory; call wandb.save again to sync new files.
+Resumed from SWM_copy/training/checkpoints_clip_full_fine-tuned_with_subopt_data_h16/epoch_004.pt at epoch 4
+[epoch 5] train_loss=0.1060 val_loss=1.1092 margin_subsample75=0.2091 progress_corr=0.5316 table_coverage=1.000
+[epoch 6] train_loss=0.0796 val_loss=1.1316 margin_subsample75=0.2197 progress_corr=0.5278 table_coverage=1.000
+[epoch 7] train_loss=0.0626 val_loss=1.1729 margin_subsample75=0.2279 progress_corr=0.5243 table_coverage=1.000
+[epoch 8] train_loss=0.0509 val_loss=1.1637 margin_subsample75=0.2357 progress_corr=0.5329 table_coverage=1.000
+[epoch 9] train_loss=0.0413 val_loss=1.1772 margin_subsample75=0.2383 progress_corr=0.5176 table_coverage=1.000
+[epoch 10] train_loss=0.0355 val_loss=1.1793 margin_subsample75=0.2424 progress_corr=0.5226 table_coverage=1.000
+[epoch 11] train_loss=0.0308 val_loss=1.1249 margin_subsample75=0.2471 progress_corr=0.5403 table_coverage=1.000
+[epoch 12] train_loss=0.0276 val_loss=1.1649 margin_subsample75=0.2492 progress_corr=0.5327 table_coverage=1.000
+Traceback (most recent call last):
+  File "/home/ashwink/Documents/swms/SWM_copy/training/dynamics_model_clip_full_finetune_combined_horizon16.py", line 1453, in <module>
+    train(micro_batch_size=args.micro_batch_size,
+  File "/home/ashwink/Documents/swms/SWM_copy/training/dynamics_model_clip_full_finetune_combined_horizon16.py", line 1139, in train
+    accum_loss += loss.item()
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/ashwink/Documents/swms/SWM_copy/training/dynamics_model_clip_full_finetune_combined_horizon16.py", line 1453, in <module>
+    train(micro_batch_size=args.micro_batch_size,
+  File "/home/ashwink/Documents/swms/SWM_copy/training/dynamics_model_clip_full_finetune_combined_horizon16.py", line 1139, in train
+    accum_loss += loss.item()
+KeyboardInterrupt

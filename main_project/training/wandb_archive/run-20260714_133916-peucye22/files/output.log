@@ -1,0 +1,125 @@
+Traceback (most recent call last):
+  File "/home/ashwink/Documents/swms/SWM_copy/training/dynamics_model_clip_lora_finetune.py", line 849, in <module>
+    train(micro_batch_size=args.micro_batch_size, num_workers=args.num_workers,
+  File "/home/ashwink/Documents/swms/SWM_copy/training/dynamics_model_clip_lora_finetune.py", line 598, in train
+    z_pred = ddp_model(pixel_values, actions)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/parallel/data_parallel.py", line 196, in forward
+    outputs = self.parallel_apply(replicas, inputs, module_kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/parallel/data_parallel.py", line 213, in parallel_apply
+    return parallel_apply(
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/parallel/parallel_apply.py", line 144, in parallel_apply
+    output.reraise()
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/_utils.py", line 774, in reraise
+    raise exception
+torch.OutOfMemoryError: Caught OutOfMemoryError in replica 0 on device 0.
+Original Traceback (most recent call last):
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/parallel/parallel_apply.py", line 114, in _worker
+    output = module(*input, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/SWM_copy/training/dynamics_model_clip_lora_finetune.py", line 173, in forward
+    z_t = self.clip_model.encode_image(pixel_values, normalize=True)  # (B, 768), grad-enabled
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/open_clip/model.py", line 327, in encode_image
+    features = self.visual(image)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/open_clip/transformer.py", line 909, in forward
+    x = self.transformer(x)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/open_clip/transformer.py", line 572, in forward
+    x = r(x, attn_mask=attn_mask)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/open_clip/transformer.py", line 298, in forward
+    x = q_x + self.ls_1(self.attention(q_x=self.ln_1(q_x), k_x=k_x, v_x=v_x, attn_mask=attn_mask))
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/open_clip/transformer.py", line 283, in attention
+    return self.attn(
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/SWM_copy/training/clip_lora.py", line 117, in forward
+    k = self.k_proj(key).view(B, S, self.num_heads, self.head_dim).transpose(1, 2)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/SWM_copy/training/clip_lora.py", line 58, in forward
+    delta = F.linear(F.linear(self.dropout(x), self.lora_A), self.lora_B) * self.scaling
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 66.00 MiB. GPU 0 has a total capacity of 23.54 GiB of which 67.75 MiB is free. Including non-PyTorch memory, this process has 22.85 GiB memory in use. Of the allocated memory 22.29 GiB is allocated by PyTorch, and 153.02 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+
+Traceback (most recent call last):
+  File "/home/ashwink/Documents/swms/SWM_copy/training/dynamics_model_clip_lora_finetune.py", line 849, in <module>
+    train(micro_batch_size=args.micro_batch_size, num_workers=args.num_workers,
+  File "/home/ashwink/Documents/swms/SWM_copy/training/dynamics_model_clip_lora_finetune.py", line 598, in train
+    z_pred = ddp_model(pixel_values, actions)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/parallel/data_parallel.py", line 196, in forward
+    outputs = self.parallel_apply(replicas, inputs, module_kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/parallel/data_parallel.py", line 213, in parallel_apply
+    return parallel_apply(
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/parallel/parallel_apply.py", line 144, in parallel_apply
+    output.reraise()
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/_utils.py", line 774, in reraise
+    raise exception
+torch.OutOfMemoryError: Caught OutOfMemoryError in replica 0 on device 0.
+Original Traceback (most recent call last):
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/parallel/parallel_apply.py", line 114, in _worker
+    output = module(*input, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/SWM_copy/training/dynamics_model_clip_lora_finetune.py", line 173, in forward
+    z_t = self.clip_model.encode_image(pixel_values, normalize=True)  # (B, 768), grad-enabled
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/open_clip/model.py", line 327, in encode_image
+    features = self.visual(image)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/open_clip/transformer.py", line 909, in forward
+    x = self.transformer(x)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/open_clip/transformer.py", line 572, in forward
+    x = r(x, attn_mask=attn_mask)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/open_clip/transformer.py", line 298, in forward
+    x = q_x + self.ls_1(self.attention(q_x=self.ln_1(q_x), k_x=k_x, v_x=v_x, attn_mask=attn_mask))
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/open_clip/transformer.py", line 283, in attention
+    return self.attn(
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/SWM_copy/training/clip_lora.py", line 117, in forward
+    k = self.k_proj(key).view(B, S, self.num_heads, self.head_dim).transpose(1, 2)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/ashwink/Documents/swms/SWM_copy/training/clip_lora.py", line 58, in forward
+    delta = F.linear(F.linear(self.dropout(x), self.lora_A), self.lora_B) * self.scaling
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 66.00 MiB. GPU 0 has a total capacity of 23.54 GiB of which 67.75 MiB is free. Including non-PyTorch memory, this process has 22.85 GiB memory in use. Of the allocated memory 22.29 GiB is allocated by PyTorch, and 153.02 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)

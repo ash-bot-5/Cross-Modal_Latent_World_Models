@@ -1,0 +1,71 @@
+Logging to /home/ashwink/Documents/swms/SWM_copy/eval/eval_zero_action_true_vs_false_alignment_20260720_154009.log
+Device: cuda
+
+Checkpoint: /home/ashwink/Documents/swms/SWM_copy/training/checkpoints_clip_full_finetuned_wider_hl/epoch_008.pt
+  epoch=8  step=7722
+
+Parsing model identifier. Schema: None, Identifier: ViT-L-14
+Loaded built-in ViT-L-14 model config.
+Instantiating model architecture: CLIP
+Loading full pretrained weights from: /home/ashwink/.cache/huggingface/hub/models--laion--CLIP-ViT-L-14-DataComp.XL-s13B-b90K/snapshots/84c9828e63dc9a9351d1fe637c346d4c1c4db341/open_clip_pytorch_model.bin
+Final image preprocessing configuration set: {'size': (224, 224), 'mode': 'RGB', 'mean': (0.48145466, 0.4578275, 0.40821073), 'std': (0.26862954, 0.26130258, 0.27577711), 'interpolation': 'bicubic', 'resize_mode': 'shortest', 'fill_color': 0}
+Model ViT-L-14 creation process complete.
+Parsing tokenizer identifier. Schema: None, Identifier: ViT-L-14
+Attempting to load config from built-in: ViT-L-14
+Using default SimpleTokenizer.
+Sampled 5 val episodes (seed=123) out of 820:
+  blocktoblock_1304_success.pkl
+  blocktoblock_2545_success.pkl
+  blocktoblock_1480_success.pkl
+  blocktoblock_805_success.pkl
+  blocktoblock_3377_success.pkl
+
+Block names (8): ['blue_cube', 'blue_moon', 'green_cube', 'green_star', 'red_moon', 'red_pentagon', 'yellow_pentagon', 'yellow_star']
+
+Encoding 2048 unique statement strings with CLIP text tower ...
+Vocab tensor shape: (8, 8, 8, 2, 2, 768)
+
+=== Episode blocktoblock_1304_success.pkl  (T=35) ===
+  TRUE  statements: count=  15680  mean=-0.2775  std=0.2881  min=-0.6694  max=+0.9683
+  FALSE statements: count=  15680  mean=-0.3975  std=0.1327  min=-0.6429  max=+0.5741
+  win_rate (cos_true > cos_false): 0.8359
+  mean margin (cos_true - cos_false): +0.1200
+
+=== Episode blocktoblock_2545_success.pkl  (T=55) ===
+  TRUE  statements: count=  24640  mean=-0.2989  std=0.3114  min=-0.6980  max=+0.9810
+  FALSE statements: count=  24640  mean=-0.4371  std=0.1507  min=-0.6828  max=+0.9406
+  win_rate (cos_true > cos_false): 0.7943
+  mean margin (cos_true - cos_false): +0.1382
+
+=== Episode blocktoblock_1480_success.pkl  (T=23) ===
+  TRUE  statements: count=  10304  mean=-0.2867  std=0.3130  min=-0.7035  max=+0.9641
+  FALSE statements: count=  10304  mean=-0.4449  std=0.1687  min=-0.7289  max=+0.9280
+  win_rate (cos_true > cos_false): 0.8978
+  mean margin (cos_true - cos_false): +0.1582
+
+=== Episode blocktoblock_805_success.pkl  (T=42) ===
+  TRUE  statements: count=  18816  mean=-0.2690  std=0.3153  min=-0.6679  max=+0.9750
+  FALSE statements: count=  18816  mean=-0.4398  std=0.0986  min=-0.6789  max=+0.1420
+  win_rate (cos_true > cos_false): 0.8956
+  mean margin (cos_true - cos_false): +0.1708
+
+=== Episode blocktoblock_3377_success.pkl  (T=85) ===
+  TRUE  statements: count=  38080  mean=-0.3094  std=0.3297  min=-0.7118  max=+0.9733
+  FALSE statements: count=  38080  mean=-0.4814  std=0.1481  min=-0.7936  max=+0.9347
+  win_rate (cos_true > cos_false): 0.8869
+  mean margin (cos_true - cos_false): +0.1721
+
+=== Summary across all 5 episodes ===
+episode                                   true_mean false_mean  win_rate    margin
+blocktoblock_1304_success.pkl               -0.2775    -0.3975    0.8359    0.1200
+blocktoblock_2545_success.pkl               -0.2989    -0.4371    0.7943    0.1382
+blocktoblock_1480_success.pkl               -0.2867    -0.4449    0.8978    0.1582
+blocktoblock_805_success.pkl                -0.2690    -0.4398    0.8956    0.1708
+blocktoblock_3377_success.pkl               -0.3094    -0.4814    0.8869    0.1721
+
+Pooled TRUE  statements: count=  107520  mean=-0.2931  std=0.3160  min=-0.7118  max=+0.9810
+Pooled FALSE statements: count=  107520  mean=-0.4482  std=0.1441  min=-0.7936  max=+0.9406
+Overall win_rate (cos_true > cos_false): 0.8608
+Overall mean margin (cos_true - cos_false): +0.1552
+
+Full log written to /home/ashwink/Documents/swms/SWM_copy/eval/eval_zero_action_true_vs_false_alignment_20260720_154009.log

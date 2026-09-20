@@ -1,0 +1,17 @@
+Obstacle-detour expert-chunk probe (h8): peg starts BETWEEN green_cube and blue_moon (relocated closer together), nearly touching green_cube.
+goal: the green cube is touching the blue moon. the peg is touching the green cube.
+peg=[0.38558839 0.15312251]  green_cube=[0.40339101 0.18967466]  blue_moon=[0.36477598 0.10562048]  dist(green_cube,blue_moon)=0.0925 (target 0.0925)
+mppi_temperature=0.1  n_planning_itrs=999  num_samples=2000  seeds=[123, 124, 125, 126, 127]
+cos_sim for every chunk (5 MPPI winners + expert) is the model's OWN predicted outcome. Every chunk (not just the expert) is ALSO physically executed once from the identical staged starting state, so cos_sim can be compared against real task success -- one PNG of the resulting frame is saved per chunk, named frame_<idx>_..._<cos_sim>_<min_dist>_<SUCCESS|FAILURE>.png.
+
+expert chunk: cos_sim=-0.4149  t=8 (final) result=TOUCHING  final_dist=0.0483  min_dist_any_step=0.0483  (touch thresh 0.05)  -- final_dist is what matters, since the model only predicts the state after the full 8-step chunk
+  first touching at step 7 (dist=0.0483) -> frame_06b_expert_first_touch_step07_dist0.0483.png
+
+  run 1 (seed=123): cos_sim=-0.0299  physical_result=FAILURE  min_dist=0.0925
+  run 2 (seed=124): cos_sim=-0.0302  physical_result=FAILURE  min_dist=0.0925
+  run 3 (seed=125): cos_sim=-0.0300  physical_result=FAILURE  min_dist=0.0925
+  run 4 (seed=126): cos_sim=-0.0305  physical_result=FAILURE  min_dist=0.0925
+  run 5 (seed=127): cos_sim=-0.0300  physical_result=FAILURE  min_dist=0.0925
+  mean cos_sim=-0.0301  max cos_sim=-0.0299  physical successes=0/5
+
+expert cos_sim <= max MPPI winner cos_sim (model does NOT rate the physically-correct chunk above its own MPPI winners)

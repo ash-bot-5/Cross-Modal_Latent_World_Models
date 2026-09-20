@@ -1,0 +1,16 @@
+epoch=11  ckpt=/home/ashwink/Documents/swms/checkpoints_clip_full_fine-tuned_with_subopt_data_h16/epoch_011.pt
+seed=123  K=512  n_planning_itrs=0 (raw pre-CEM population)
+dir_align_threshold=0.5
+
+toward green_cube bucket: n=160  mean_cost=1.22895  median_cost=1.25721  std_cost=0.12065
+other bucket:             n=352  mean_cost=1.22116  median_cost=1.23485  std_cost=0.10226
+
+toward green_cube bucket: mean_cos_sim=-0.22895
+other bucket:             mean_cos_sim=-0.22116
+
+Welch's t-test on cost (toward vs other): t=0.7064  p=0.480561
+Cohen's d (toward vs other, cost): 0.0694
+
+Correlation(dir_align, cost) across all K=512: 0.0418
+
+=> no significant difference between buckets (p>=0.05) at iteration 1.

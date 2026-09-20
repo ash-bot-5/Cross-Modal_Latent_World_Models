@@ -1,0 +1,72 @@
+{
+  "per_condition": {
+    "green_cube_start": {
+      "checkpoint_dir_tag": "expert+subopt-model_h16",
+      "epoch": 11,
+      "horizon": 16,
+      "condition": "green_cube_start",
+      "probe": "dist_peg_start",
+      "n_episodes_matched": 643,
+      "probe_type": "regression",
+      "n_train": 3018,
+      "n_val": 754,
+      "label_mean_val": 0.04130935296416283,
+      "label_std_val": 0.014001943171024323,
+      "ridge_alpha": 0.03162277660168379,
+      "train_r2": 0.40172827699903746,
+      "val_r2": 0.30620982104536754,
+      "val_mae": 0.006247475021353983,
+      "val_rmse": 0.011662788557413626,
+      "pearson_r": 0.5544064524502251,
+      "mean_baseline_rmse": 0.014007097747476696,
+      "skipped": false
+    },
+    "green_cube_to_blue_moon": {
+      "checkpoint_dir_tag": "expert+subopt-model_h16",
+      "epoch": 11,
+      "horizon": 16,
+      "condition": "green_cube_to_blue_moon",
+      "probe": "dist_ab",
+      "n_episodes_matched": 84,
+      "probe_type": "regression",
+      "n_train": 2631,
+      "n_val": 696,
+      "label_mean_val": 0.1723540872335434,
+      "label_std_val": 0.10159043222665787,
+      "ridge_alpha": 0.01,
+      "train_r2": 0.6385620737493916,
+      "val_r2": 0.12519222331780877,
+      "val_mae": 0.07276771124071812,
+      "val_rmse": 0.09501870988348768,
+      "pearson_r": 0.42072246339373626,
+      "mean_baseline_rmse": 0.10440519312341069,
+      "skipped": false
+    }
+  },
+  "comparison": [
+    {
+      "tag": "green_cube_start",
+      "probe": "dist_peg_start",
+      "n_episodes_matched": 643,
+      "n_train": 3018,
+      "n_val": 754,
+      "val_r2": 0.30620982104536754,
+      "pearson_r": 0.5544064524502251,
+      "ridge_alpha": 0.03162277660168379,
+      "baseline_val_r2": 0.38492283387994686,
+      "baseline_pearson_r": 0.6225223335873857
+    },
+    {
+      "tag": "green_cube_to_blue_moon",
+      "probe": "dist_ab",
+      "n_episodes_matched": 84,
+      "n_train": 2631,
+      "n_val": 696,
+      "val_r2": 0.12519222331780877,
+      "pearson_r": 0.42072246339373626,
+      "ridge_alpha": 0.01,
+      "baseline_val_r2": 0.19173289650866,
+      "baseline_pearson_r": 0.43885761163573755
+    }
+  ]
+}

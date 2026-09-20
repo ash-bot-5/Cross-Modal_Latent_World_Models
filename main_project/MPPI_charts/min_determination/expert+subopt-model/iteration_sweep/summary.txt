@@ -1,0 +1,21 @@
+epoch 11 MPPI planner-iteration sweep
+K=512  mppi_temperature=0.1  max_action_value=1.0  warm_start_std=0.1  seeds=[123, 124, 125, 126, 127]
+ref near-perfect chunk cos_sim = 0.6388
+wrong-dir controls: 90deg=0.4526  180deg=0.3047  270deg=0.5278
+
+  evals   itrs  per-seed cos_sim                             mean      std     best    vs_ref   std_final   disp_spr
+--------------------------------------------------------------------------------------------------------------------
+     10 *   9  0.6534 0.6573 0.6593 0.6540 0.6560         0.6560   0.0022   0.6593   +0.0205    1.49e-01     0.0143
+     20    19  0.6601 0.6608 0.6612 0.6590 0.6620         0.6606   0.0010   0.6620   +0.0232    1.19e-01     0.0178
+     50    49  0.6642 0.6654 0.6689 0.6629 0.6648         0.6652   0.0020   0.6689   +0.0302    8.29e-02     0.0153
+    100    99  0.6670 0.6676 0.6699 0.6673 0.6672         0.6678   0.0011   0.6699   +0.0311    6.09e-02     0.0097
+    500   499  0.6687 0.6692 0.6703 0.6677 0.6688         0.6689   0.0008   0.6703   +0.0315    1.88e-02     0.0088
+   1000   999  0.6689 0.6697 0.6698 0.6674 0.6691         0.6690   0.0009   0.6698   +0.0310    8.01e-03     0.0080
+   5000  4999  0.6686 0.6694 0.6695 0.6670 0.6689         0.6687   0.0009   0.6695   +0.0308    2.17e-05     0.0085
+  10000  9999  0.6686 0.6694 0.6695 0.6670 0.6689         0.6687   0.0009   0.6695   +0.0308    7.44e-07     0.0085
+
+* = the 10-evaluation arm, asserted to reproduce mppi_temperature_sweep.py's temp=0.1 result
+evals = total dynamics evaluations per command() call = n_planning_itrs + 1
+std_final = mean refit std at the last iteration; the initial Uniform(-1,1) draw has
+            std 0.577, so this is the direct measure of population collapse.
+vs_ref = best-seed cos_sim minus the reference chunk's cos_sim (0 = matched it).

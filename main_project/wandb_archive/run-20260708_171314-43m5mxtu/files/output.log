@@ -1,0 +1,3 @@
+Train dataset: 224225 samples, 876 batches/epoch
+Val dataset:   37460 samples, 147 batches/epoch
+Changed fraction — train: 0.2017  val: 0.2117

@@ -1,0 +1,6 @@
+run,checkpoint_path,epoch,train_top1,heldout_top1_pooled,heldout_mean_rank_pooled,n_train_samples,n_heldout_samples
+old_buggy,/home/ashwink/Documents/swms/SWM_copy/OLD/checkpoints_OLD/epoch_199.pt,199,0.951,0.9507741591030432,1.1722637479978644,1000,37460
+non-upweighted_best,/home/ashwink/Documents/swms/SWM_copy/checkpoints/best.pt,1,0.27,0.2118793379604912,11.393993593166044,1000,37460
+non-upweighted_latest,/home/ashwink/Documents/swms/SWM_copy/checkpoints/latest.pt,49,0.826,0.09954618259476775,53.55392418579819,1000,37460
+upweighted_best,/home/ashwink/Documents/swms/SWM_copy/checkpoints_upweighted/best.pt,0,0.198,0.1985584623598505,8.942925787506674,1000,37460
+upweighted_latest,/home/ashwink/Documents/swms/SWM_copy/checkpoints_upweighted/latest.pt,49,0.822,0.10565936999466097,49.69482114255206,1000,37460

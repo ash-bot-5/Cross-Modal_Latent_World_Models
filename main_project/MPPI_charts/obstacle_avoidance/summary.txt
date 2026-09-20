@@ -1,0 +1,23 @@
+Obstacle-avoidance probe: peg starts BETWEEN green_cube and blue_moon, nearly touching green_cube.
+goal: the green cube is touching the blue moon. the peg is touching the green cube.
+peg=[0.38550461 0.15307535]  green_cube=[0.40339102 0.18967466]  blue_moon=[0.31499736 0.0067529 ]  dist(peg,green_cube)=0.0407  dist(green_cube,blue_moon)=0.2032
+mppi_temperature=0.03  n_planning_itrs=1000  num_samples=2000  seeds=[123, 124, 125, 126, 127]
+cos_sim is the dynamics model's OWN predicted outcome -- no env.step() is ever called.
+disp.toward_blue > 0 means the planned chunk drives further toward/through blue_moon (no detour); < 0 means it moves back toward the far side of green_cube (a detour starting). Descriptive only, no pass/fail threshold asserted.
+
+--- expert+subopt epoch8 (horizon=8) ---
+  run 1 (seed=123): cos_sim=0.0884  disp.toward_blue=-0.0638
+  run 2 (seed=124): cos_sim=0.0885  disp.toward_blue=-0.0650
+  run 3 (seed=125): cos_sim=0.0885  disp.toward_blue=-0.0657
+  run 4 (seed=126): cos_sim=0.0885  disp.toward_blue=-0.0652
+  run 5 (seed=127): cos_sim=0.0886  disp.toward_blue=-0.0653
+  mean cos_sim=0.0885  mean disp.toward_blue=-0.0650
+
+--- expert+subopt_h16 epoch10 (horizon=16) ---
+  run 1 (seed=123): cos_sim=0.2169  disp.toward_blue=+0.2219
+  run 2 (seed=124): cos_sim=0.2182  disp.toward_blue=+0.2444
+  run 3 (seed=125): cos_sim=0.2170  disp.toward_blue=+0.2418
+  run 4 (seed=126): cos_sim=0.2208  disp.toward_blue=+0.2321
+  run 5 (seed=127): cos_sim=0.2167  disp.toward_blue=+0.2640
+  mean cos_sim=0.2179  mean disp.toward_blue=+0.2408
+
