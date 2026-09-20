@@ -1,0 +1,12 @@
+{
+  "epoch": 8,
+  "rollout_idx": 4,
+  "seed": 4,
+  "start_block": "green_star",
+  "target_block": "green_cube",
+  "goal_text": "the green star is touching the green cube. the peg is touching the green star.",
+  "min_dist_a_b": 0.23220610183624454,
+  "success": false,
+  "video_path": "/home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_random_scenes_cold_temp0.1_ev1000_ns1000_nexec8/epoch8/epoch8_rollout4_failure.mp4",
+  "pybullet_states_path": "/home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_random_scenes_cold_temp0.1_ev1000_ns1000_nexec8/epoch8/epoch8_rollout4_pybullet_states.pkl"
+}

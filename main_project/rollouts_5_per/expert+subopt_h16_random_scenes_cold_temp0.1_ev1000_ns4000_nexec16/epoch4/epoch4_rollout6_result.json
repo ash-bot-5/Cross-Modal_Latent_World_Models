@@ -1,0 +1,12 @@
+{
+  "epoch": 4,
+  "rollout_idx": 6,
+  "seed": 6,
+  "start_block": "blue_moon",
+  "target_block": "green_star",
+  "goal_text": "the blue moon is touching the green star. the peg is touching the blue moon.",
+  "min_dist_a_b": 0.033762054820247266,
+  "success": true,
+  "video_path": "/home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_h16_random_scenes_cold_temp0.1_ev1000_ns4000_nexec16/epoch4/epoch4_rollout6_success.mp4",
+  "pybullet_states_path": "/home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_h16_random_scenes_cold_temp0.1_ev1000_ns4000_nexec16/epoch4/epoch4_rollout6_pybullet_states.pkl"
+}

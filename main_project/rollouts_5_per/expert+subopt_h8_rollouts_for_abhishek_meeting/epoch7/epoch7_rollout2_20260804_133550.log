@@ -1,0 +1,91 @@
+Checkpoint dir epoch: 7  Rollout: 2
+Logging to /home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_h8_rollouts_for_abhishek_meeting/epoch7/epoch7_rollout2_20260804_133550.log
+Goal (fixed, steps 0-199): the green cube is touching the blue moon. the peg is touching the green cube.
+
+Checkpoint: /home/ashwink/Documents/swms/SWM_copy/training/checkpoints_clip_full_fine-tuned_with_subopt_data/epoch_007.pt
+  epoch=7  step=13488
+
+Loading CLIP ViT-L/14 (datacomp_xl_s13b_b90k) + fine-tuned clip_state_dict ...
+Parsing model identifier. Schema: None, Identifier: ViT-L-14
+Loaded built-in ViT-L-14 model config.
+Instantiating model architecture: CLIP
+Loading full pretrained weights from: /home/ashwink/.cache/huggingface/hub/models--laion--CLIP-ViT-L-14-DataComp.XL-s13B-b90K/snapshots/84c9828e63dc9a9351d1fe637c346d4c1c4db341/open_clip_pytorch_model.bin
+Final image preprocessing configuration set: {'size': (224, 224), 'mode': 'RGB', 'mean': (0.48145466, 0.4578275, 0.40821073), 'std': (0.26862954, 0.26130258, 0.27577711), 'interpolation': 'bicubic', 'resize_mode': 'shortest', 'fill_color': 0}
+Model ViT-L-14 creation process complete.
+Parsing tokenizer identifier. Schema: None, Identifier: ViT-L-14
+Attempting to load config from built-in: ViT-L-14
+Using default SimpleTokenizer.
+z_star shape: torch.Size([768])
+
+Loading action stats from /home/ashwink/full_data_5000/langtable/demos/ ...
+  lo=[-0.03372681140899658, -0.03493623435497284]  hi=[0.03496786952018738, 0.03494429588317871]
+
+Initializing LangTable env ...
+Loading URDF plane.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/workspace_real.urdf
+Loading URDF xarm/xarm6_robot_white.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/suction/cylinder_real.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/red_moon.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/red_cube.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/red_star.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/red_pentagon.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/blue_moon.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/blue_cube.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/blue_star.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/blue_pentagon.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/yellow_moon.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/yellow_cube.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/yellow_star.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/yellow_pentagon.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/green_moon.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/green_cube.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/green_star.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/green_pentagon.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/purple_moon.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/purple_cube.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/purple_star.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/purple_pentagon.urdf
+Env ready.
+
+Forced peg start: [0.42843915 0.24419614]  (green_cube=[0.40339102 0.18967466], blue_moon=[0.32039625 0.00902261])
+  dist(peg,green_cube)=0.0600  dist(peg,blue_moon)=0.2588  dist(green_cube,blue_moon)=0.1988
+
+MPPI: K=1000  mppi_temperature=0.1  evals=1000 (n_planning_itrs=999)  max_action_value=1.0  warm_start_std=0.1  n_execute=8  seed=ambient RNG
+
+Execution cadence: n_execute=8 -> 25 plans x 8 actions = 200 env steps (max_steps=200)
+Warm start: DISABLED (cold_start) -- planner.reset() before every plan, so each draws a fresh Uniform(-1,1) population (std 0.577); warm_start_std is inert
+
+step  cos(zt,z*)  cos(zt,zt-1)  |   cos(predK,z*) min/mean/max  cos(pred_sel,z*)   cos(zpred0,z*)  ||a_raw||  |  dist(peg,A)   dist(A,B)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   0      0.1869           nan  |    0.6957/  0.6973/  0.6981            0.6981           0.6263     0.0149  |       0.0587      0.1988
+   8      0.0775        0.4116  |    0.3510/  0.3530/  0.3534            0.3534          -0.0833     0.0068  |       0.0400      0.1717
+  16     -0.0475        0.4323  |   -0.1581/ -0.1553/ -0.1538           -0.1538          -0.3721     0.0452  |       0.0527      0.1705
+  24     -0.0229        0.1558  |   -0.0199/ -0.0176/ -0.0154           -0.0154          -0.3589     0.0276  |       0.1960      0.1705
+  32     -0.0463        0.2096  |   -0.2711/ -0.2690/ -0.2672           -0.2672          -0.4568     0.0459  |       0.0738      0.1705
+  40      0.0391        0.2741  |   -0.2321/ -0.2292/ -0.2271           -0.2271          -0.3957     0.0228  |       0.2532      0.1705
+  48      0.1047        0.2181  |    0.6621/  0.6640/  0.6648            0.6648           0.4268     0.0121  |       0.0408      0.1742
+  56     -0.0219        0.3478  |   -0.2739/ -0.2715/ -0.2695           -0.2695          -0.4065     0.0460  |       0.0550      0.1765
+  64      0.0092        0.2578  |   -0.4266/ -0.4253/ -0.4247           -0.4247          -0.4276     0.0212  |       0.2289      0.1765
+  72      0.0087        1.0000  |   -0.4256/ -0.4247/ -0.4242           -0.4242          -0.4274     0.0200  |       0.2125      0.1765
+  80      0.0092        1.0000  |   -0.4265/ -0.4243/ -0.4236           -0.4236          -0.4275     0.0224  |       0.1841      0.1765
+  88      0.0087        1.0000  |   -0.4252/ -0.4242/ -0.4239           -0.4239          -0.4274     0.0221  |       0.1640      0.1765
+  96      0.0088        1.0000  |   -0.4278/ -0.4250/ -0.4243           -0.4243          -0.4274     0.0218  |       0.1579      0.1765
+ 104      0.0093        1.0000  |   -0.4269/ -0.4243/ -0.4236           -0.4236          -0.4275     0.0218  |       0.1652      0.1765
+ 112      0.0088        1.0000  |   -0.4264/ -0.4250/ -0.4245           -0.4245          -0.4274     0.0188  |       0.1863      0.1765
+ 120      0.0094        1.0000  |   -0.4267/ -0.4247/ -0.4239           -0.4239          -0.4272     0.0196  |       0.2140      0.1765
+ 128      0.0085        1.0000  |   -0.4251/ -0.4241/ -0.4236           -0.4236          -0.4276     0.0229  |       0.2281      0.1765
+ 136      0.0090        1.0000  |   -0.4254/ -0.4242/ -0.4235           -0.4235          -0.4277     0.0222  |       0.2285      0.1765
+ 144      0.0090        1.0000  |   -0.4247/ -0.4237/ -0.4233           -0.4233          -0.4277     0.0208  |       0.2284      0.1765
+ 152      0.0091        1.0000  |   -0.4246/ -0.4235/ -0.4230           -0.4230          -0.4277     0.0248  |       0.2286      0.1765
+ 160      0.0090        1.0000  |   -0.4257/ -0.4242/ -0.4237           -0.4237          -0.4278     0.0224  |       0.2286      0.1765
+ 168      0.0091        1.0000  |   -0.4259/ -0.4245/ -0.4240           -0.4240          -0.4271     0.0185  |       0.2285      0.1765
+ 176      0.0090        1.0000  |   -0.4256/ -0.4237/ -0.4232           -0.4232          -0.4277     0.0210  |       0.2284      0.1765
+ 184      0.0090        1.0000  |   -0.4245/ -0.4236/ -0.4232           -0.4232          -0.4276     0.0231  |       0.2285      0.1765
+ 192      0.0090        1.0000  |   -0.4249/ -0.4238/ -0.4233           -0.4233          -0.4276     0.0194  |       0.2283      0.1765
+IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (320, 180) to (320, 192) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+
+Saved 200 frames -> /home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_h8_rollouts_for_abhishek_meeting/epoch7/epoch7_rollout2_failure.mp4
+Saved 200 pybullet states -> /home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_h8_rollouts_for_abhishek_meeting/epoch7/epoch7_rollout2_pybullet_states.pkl
+min dist(green_cube,blue_moon) over episode = 0.1705  ->  FAILURE
+Full log written to /home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_h8_rollouts_for_abhishek_meeting/epoch7/epoch7_rollout2_20260804_133550.log
+Result json -> /home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_h8_rollouts_for_abhishek_meeting/epoch7/epoch7_rollout2_result.json

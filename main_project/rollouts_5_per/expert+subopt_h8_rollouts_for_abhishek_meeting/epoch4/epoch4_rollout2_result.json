@@ -1,0 +1,8 @@
+{
+  "epoch": 4,
+  "rollout_idx": 2,
+  "min_dist_a_b": 0.1987647592883555,
+  "success": false,
+  "video_path": "/home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_h8_rollouts_for_abhishek_meeting/epoch4/epoch4_rollout2_failure.mp4",
+  "pybullet_states_path": "/home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_h8_rollouts_for_abhishek_meeting/epoch4/epoch4_rollout2_pybullet_states.pkl"
+}

@@ -1,0 +1,12 @@
+{
+  "epoch": 8,
+  "rollout_idx": 0,
+  "seed": 0,
+  "start_block": "yellow_pentagon",
+  "target_block": "yellow_star",
+  "goal_text": "the yellow pentagon is touching the yellow star. the peg is touching the yellow pentagon.",
+  "min_dist_a_b": 0.12596229696724337,
+  "success": false,
+  "video_path": "/home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_random_scenes_cold_temp0.1_ev1000_ns1000_nexec8/epoch8/epoch8_rollout0_failure.mp4",
+  "pybullet_states_path": "/home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_random_scenes_cold_temp0.1_ev1000_ns1000_nexec8/epoch8/epoch8_rollout0_pybullet_states.pkl"
+}

@@ -1,0 +1,8 @@
+{
+  "epoch": 8,
+  "rollout_idx": 5,
+  "min_dist_a_b": 0.07789534961942457,
+  "success": false,
+  "video_path": "/home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_temp0.03_ev1001_ns2000_nexec8/epoch8/epoch8_rollout5_failure.mp4",
+  "pybullet_states_path": "/home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_temp0.03_ev1001_ns2000_nexec8/epoch8/epoch8_rollout5_pybullet_states.pkl"
+}

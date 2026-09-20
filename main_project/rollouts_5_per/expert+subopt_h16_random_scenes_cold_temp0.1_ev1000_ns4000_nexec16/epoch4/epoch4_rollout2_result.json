@@ -1,0 +1,12 @@
+{
+  "epoch": 4,
+  "rollout_idx": 2,
+  "seed": 2,
+  "start_block": "blue_cube",
+  "target_block": "yellow_star",
+  "goal_text": "the blue cube is touching the yellow star. the peg is touching the blue cube.",
+  "min_dist_a_b": 0.13621532615185802,
+  "success": false,
+  "video_path": "/home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_h16_random_scenes_cold_temp0.1_ev1000_ns4000_nexec16/epoch4/epoch4_rollout2_failure.mp4",
+  "pybullet_states_path": "/home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_h16_random_scenes_cold_temp0.1_ev1000_ns4000_nexec16/epoch4/epoch4_rollout2_pybullet_states.pkl"
+}

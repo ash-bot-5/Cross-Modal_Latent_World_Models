@@ -1,0 +1,68 @@
+Summary: expert+subopt_h8_rollouts_for_abhishek_meeting (/home/ashwink/Documents/swms/SWM_copy/training/checkpoints_clip_full_fine-tuned_with_subopt_data)
+Success criterion: dist(green_cube, blue_moon) <= 0.05 at any point in the episode
+================================================================================
+
+Epoch 3: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1948
+  rollout 1: FAILURE  min_dist=0.1964
+  rollout 2: FAILURE  min_dist=0.1956
+  rollout 3: FAILURE  min_dist=0.1910
+  rollout 4: FAILURE  min_dist=0.1968
+
+Epoch 4: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1986
+  rollout 1: FAILURE  min_dist=0.1988
+  rollout 2: FAILURE  min_dist=0.1988
+  rollout 3: FAILURE  min_dist=0.1982
+  rollout 4: FAILURE  min_dist=0.1988
+
+Epoch 5: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1968
+  rollout 1: FAILURE  min_dist=0.1979
+  rollout 2: FAILURE  min_dist=0.1968
+  rollout 3: FAILURE  min_dist=0.1967
+  rollout 4: FAILURE  min_dist=0.1970
+
+Epoch 6: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1988
+  rollout 1: FAILURE  min_dist=0.1838
+  rollout 2: FAILURE  min_dist=0.1988
+  rollout 3: FAILURE  min_dist=0.1571
+  rollout 4: FAILURE  min_dist=0.1988
+
+Epoch 7: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1652
+  rollout 1: FAILURE  min_dist=0.1680
+  rollout 2: FAILURE  min_dist=0.1705
+  rollout 3: FAILURE  min_dist=0.1512
+  rollout 4: FAILURE  min_dist=0.1767
+
+Epoch 8: 2/5 success (40.0%)
+  rollout 0: SUCCESS  min_dist=0.0365
+  rollout 1: SUCCESS  min_dist=0.0438
+  rollout 2: FAILURE  min_dist=0.1275
+  rollout 3: FAILURE  min_dist=0.1248
+  rollout 4: FAILURE  min_dist=0.0919
+
+Epoch 9: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1816
+  rollout 1: FAILURE  min_dist=0.1799
+  rollout 2: FAILURE  min_dist=0.1743
+  rollout 3: FAILURE  min_dist=0.1794
+  rollout 4: FAILURE  min_dist=0.1809
+
+Epoch 10: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1648
+  rollout 1: FAILURE  min_dist=0.1650
+  rollout 2: FAILURE  min_dist=0.1666
+  rollout 3: FAILURE  min_dist=0.1644
+  rollout 4: FAILURE  min_dist=0.1624
+
+Epoch 11: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1384
+  rollout 1: FAILURE  min_dist=0.1538
+  rollout 2: FAILURE  min_dist=0.1437
+  rollout 3: FAILURE  min_dist=0.1416
+  rollout 4: FAILURE  min_dist=0.1226
+
+Overall: 2/45 success (4.4%)

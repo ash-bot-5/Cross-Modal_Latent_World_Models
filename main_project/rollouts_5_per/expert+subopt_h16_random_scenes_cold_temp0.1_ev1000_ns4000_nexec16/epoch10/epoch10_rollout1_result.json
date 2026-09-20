@@ -1,0 +1,12 @@
+{
+  "epoch": 10,
+  "rollout_idx": 1,
+  "seed": 1,
+  "start_block": "green_cube",
+  "target_block": "red_moon",
+  "goal_text": "the green cube is touching the red moon. the peg is touching the green cube.",
+  "min_dist_a_b": 0.16455023185541837,
+  "success": false,
+  "video_path": "/home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_h16_random_scenes_cold_temp0.1_ev1000_ns4000_nexec16/epoch10/epoch10_rollout1_failure.mp4",
+  "pybullet_states_path": "/home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_h16_random_scenes_cold_temp0.1_ev1000_ns4000_nexec16/epoch10/epoch10_rollout1_pybullet_states.pkl"
+}

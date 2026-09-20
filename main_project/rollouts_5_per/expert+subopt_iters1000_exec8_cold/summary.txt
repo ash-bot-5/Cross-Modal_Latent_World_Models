@@ -1,0 +1,10 @@
+Summary: expert+subopt_iters1000_exec8_cold (/home/ashwink/Documents/swms/SWM_copy/training/checkpoints_clip_full_fine-tuned_with_subopt_data)
+Success criterion: dist(green_cube, blue_moon) <= 0.05 at any point in the episode
+================================================================================
+
+Epoch 11: 0/3 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1464
+  rollout 1: FAILURE  min_dist=0.1562
+  rollout 2: FAILURE  min_dist=0.1184
+
+Overall: 0/3 success (0.0%)

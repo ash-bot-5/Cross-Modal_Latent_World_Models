@@ -1,0 +1,12 @@
+{
+  "epoch": 10,
+  "rollout_idx": 7,
+  "seed": 7,
+  "start_block": "red_pentagon",
+  "target_block": "blue_moon",
+  "goal_text": "the red pentagon is touching the blue moon. the peg is touching the red pentagon.",
+  "min_dist_a_b": 0.2512238634491533,
+  "success": false,
+  "video_path": "/home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_h16_random_scenes_cold_temp0.1_ev1000_ns4000_nexec16/epoch10/epoch10_rollout7_failure.mp4",
+  "pybullet_states_path": "/home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_h16_random_scenes_cold_temp0.1_ev1000_ns4000_nexec16/epoch10/epoch10_rollout7_pybullet_states.pkl"
+}

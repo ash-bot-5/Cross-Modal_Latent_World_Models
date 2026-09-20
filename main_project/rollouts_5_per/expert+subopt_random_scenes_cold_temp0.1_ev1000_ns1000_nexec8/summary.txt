@@ -1,0 +1,27 @@
+Summary: expert+subopt_random_scenes_cold_temp0.1_ev1000_ns1000_nexec8 (/home/ashwink/Documents/swms/SWM_copy/training/checkpoints_clip_full_fine-tuned_with_subopt_data)
+Success criterion: dist(start_block, target_block) <= 0.05 at any point in the episode (block pair is randomized per rollout -- see below)
+================================================================================
+
+Epoch 8: 1/10 success (10.0%)
+  rollout 0 (seed=0): FAILURE  min_dist=0.1260  yellow_pentagon -> yellow_star
+    goal: the yellow pentagon is touching the yellow star. the peg is touching the yellow pentagon.
+  rollout 1 (seed=1): FAILURE  min_dist=0.1646  green_cube -> red_moon
+    goal: the green cube is touching the red moon. the peg is touching the green cube.
+  rollout 2 (seed=2): FAILURE  min_dist=0.0763  blue_cube -> yellow_star
+    goal: the blue cube is touching the yellow star. the peg is touching the blue cube.
+  rollout 3 (seed=3): FAILURE  min_dist=0.1517  green_star -> red_moon
+    goal: the green star is touching the red moon. the peg is touching the green star.
+  rollout 4 (seed=4): FAILURE  min_dist=0.2322  green_star -> green_cube
+    goal: the green star is touching the green cube. the peg is touching the green star.
+  rollout 5 (seed=5): FAILURE  min_dist=0.0726  red_moon -> red_pentagon
+    goal: the red moon is touching the red pentagon. the peg is touching the red moon.
+  rollout 6 (seed=6): SUCCESS  min_dist=0.0338  blue_moon -> green_star
+    goal: the blue moon is touching the green star. the peg is touching the blue moon.
+  rollout 7 (seed=7): FAILURE  min_dist=0.2512  red_pentagon -> blue_moon
+    goal: the red pentagon is touching the blue moon. the peg is touching the red pentagon.
+  rollout 8 (seed=8): FAILURE  min_dist=0.1708  green_star -> green_cube
+    goal: the green star is touching the green cube. the peg is touching the green star.
+  rollout 9 (seed=9): FAILURE  min_dist=0.1435  yellow_star -> red_moon
+    goal: the yellow star is touching the red moon. the peg is touching the yellow star.
+
+Overall: 1/10 success (10.0%)

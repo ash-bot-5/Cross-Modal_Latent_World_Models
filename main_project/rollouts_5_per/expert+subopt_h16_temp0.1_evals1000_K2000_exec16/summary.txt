@@ -1,0 +1,75 @@
+Summary: expert+subopt_h16_temp0.1_evals1000_K2000_exec16 (/home/ashwink/Documents/swms/checkpoints_clip_full_fine-tuned_with_subopt_data_h16)
+Success criterion: dist(green_cube, blue_moon) <= 0.05 at any point in the episode
+================================================================================
+
+Epoch 3: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1988
+  rollout 1: FAILURE  min_dist=0.1988
+  rollout 2: FAILURE  min_dist=0.1988
+  rollout 3: FAILURE  min_dist=0.1988
+  rollout 4: FAILURE  min_dist=0.1988
+
+Epoch 4: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1123
+  rollout 1: FAILURE  min_dist=0.0889
+  rollout 2: FAILURE  min_dist=0.1114
+  rollout 3: FAILURE  min_dist=0.0574
+  rollout 4: FAILURE  min_dist=0.1138
+
+Epoch 5: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1911
+  rollout 1: FAILURE  min_dist=0.1988
+  rollout 2: FAILURE  min_dist=0.1988
+  rollout 3: FAILURE  min_dist=0.1988
+  rollout 4: FAILURE  min_dist=0.1988
+
+Epoch 6: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1988
+  rollout 1: FAILURE  min_dist=0.1988
+  rollout 2: FAILURE  min_dist=0.1988
+  rollout 3: FAILURE  min_dist=0.1988
+  rollout 4: FAILURE  min_dist=0.1988
+
+Epoch 7: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1480
+  rollout 1: FAILURE  min_dist=0.1138
+  rollout 2: FAILURE  min_dist=0.0564
+  rollout 3: FAILURE  min_dist=0.1022
+  rollout 4: FAILURE  min_dist=0.1988
+
+Epoch 8: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1020
+  rollout 1: FAILURE  min_dist=0.1045
+  rollout 2: FAILURE  min_dist=0.1337
+  rollout 3: FAILURE  min_dist=0.1387
+  rollout 4: FAILURE  min_dist=0.1329
+
+Epoch 9: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1043
+  rollout 1: FAILURE  min_dist=0.1103
+  rollout 2: FAILURE  min_dist=0.1002
+  rollout 3: FAILURE  min_dist=0.1238
+  rollout 4: FAILURE  min_dist=0.1098
+
+Epoch 10: 1/5 success (20.0%)
+  rollout 0: FAILURE  min_dist=0.1384
+  rollout 1: FAILURE  min_dist=0.1454
+  rollout 2: SUCCESS  min_dist=0.0446
+  rollout 3: FAILURE  min_dist=0.1505
+  rollout 4: FAILURE  min_dist=0.0635
+
+Epoch 11: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1077
+  rollout 1: FAILURE  min_dist=0.1063
+  rollout 2: FAILURE  min_dist=0.1456
+  rollout 3: FAILURE  min_dist=0.1396
+  rollout 4: FAILURE  min_dist=0.0523
+
+Epoch 12: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1232
+  rollout 1: FAILURE  min_dist=0.1154
+  rollout 2: FAILURE  min_dist=0.1377
+  rollout 3: FAILURE  min_dist=0.0996
+  rollout 4: FAILURE  min_dist=0.1281
+
+Overall: 1/50 success (2.0%)

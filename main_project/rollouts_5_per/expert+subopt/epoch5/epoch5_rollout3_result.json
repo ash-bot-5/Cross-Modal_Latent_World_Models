@@ -1,0 +1,7 @@
+{
+  "epoch": 5,
+  "rollout_idx": 3,
+  "min_dist_a_b": 0.03604037821724759,
+  "success": true,
+  "video_path": "/home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt/epoch5/epoch5_rollout3_success.mp4"
+}

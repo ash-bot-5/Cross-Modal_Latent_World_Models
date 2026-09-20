@@ -1,0 +1,27 @@
+Summary: expert+subopt_h16_temp0.03_ev1001_ns2000_nexec8 (/home/ashwink/Documents/swms/checkpoints_clip_full_fine-tuned_with_subopt_data_h16)
+Success criterion: dist(green_cube, blue_moon) <= 0.05 at any point in the episode
+================================================================================
+
+Epoch 10: 0/20 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1481
+  rollout 1: FAILURE  min_dist=0.1154
+  rollout 2: FAILURE  min_dist=0.1459
+  rollout 3: FAILURE  min_dist=0.0586
+  rollout 4: FAILURE  min_dist=0.1519
+  rollout 5: FAILURE  min_dist=0.1217
+  rollout 6: FAILURE  min_dist=0.1139
+  rollout 7: FAILURE  min_dist=0.1200
+  rollout 8: FAILURE  min_dist=0.1632
+  rollout 9: FAILURE  min_dist=0.1455
+  rollout 10: FAILURE  min_dist=0.1236
+  rollout 11: FAILURE  min_dist=0.1422
+  rollout 12: FAILURE  min_dist=0.1503
+  rollout 13: FAILURE  min_dist=0.1575
+  rollout 14: FAILURE  min_dist=0.1485
+  rollout 15: FAILURE  min_dist=0.0639
+  rollout 16: FAILURE  min_dist=0.1455
+  rollout 17: FAILURE  min_dist=0.1475
+  rollout 18: FAILURE  min_dist=0.1465
+  rollout 19: FAILURE  min_dist=0.1535
+
+Overall: 0/20 success (0.0%)

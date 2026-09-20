@@ -1,0 +1,117 @@
+Summary: expert-only (/home/ashwink/Documents/swms/SWM_copy/training/checkpoints_clip_full_finetuned_wider_hl)
+Success criterion: dist(green_cube, blue_moon) <= 0.05 at any point in the episode
+================================================================================
+
+Epoch 0: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1988
+  rollout 1: FAILURE  min_dist=0.1988
+  rollout 2: FAILURE  min_dist=0.1988
+  rollout 3: FAILURE  min_dist=0.1988
+  rollout 4: FAILURE  min_dist=0.1988
+
+Epoch 1: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1784
+  rollout 1: FAILURE  min_dist=0.1577
+  rollout 2: FAILURE  min_dist=0.1876
+  rollout 3: FAILURE  min_dist=0.1841
+  rollout 4: FAILURE  min_dist=0.1693
+
+Epoch 2: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1988
+  rollout 1: FAILURE  min_dist=0.1988
+  rollout 2: FAILURE  min_dist=0.1988
+  rollout 3: FAILURE  min_dist=0.1988
+  rollout 4: FAILURE  min_dist=0.1988
+
+Epoch 3: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1988
+  rollout 1: FAILURE  min_dist=0.1988
+  rollout 2: FAILURE  min_dist=0.1964
+  rollout 3: FAILURE  min_dist=0.1498
+  rollout 4: FAILURE  min_dist=0.1523
+
+Epoch 4: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1988
+  rollout 1: FAILURE  min_dist=0.1988
+  rollout 2: FAILURE  min_dist=0.1988
+  rollout 3: FAILURE  min_dist=0.1988
+  rollout 4: FAILURE  min_dist=0.1988
+
+Epoch 5: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1988
+  rollout 1: FAILURE  min_dist=0.1988
+  rollout 2: FAILURE  min_dist=0.1988
+  rollout 3: FAILURE  min_dist=0.1976
+  rollout 4: FAILURE  min_dist=0.1988
+
+Epoch 6: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1594
+  rollout 1: FAILURE  min_dist=0.1659
+  rollout 2: FAILURE  min_dist=0.0620
+  rollout 3: FAILURE  min_dist=0.1976
+  rollout 4: FAILURE  min_dist=0.1947
+
+Epoch 7: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1769
+  rollout 1: FAILURE  min_dist=0.0820
+  rollout 2: FAILURE  min_dist=0.0918
+  rollout 3: FAILURE  min_dist=0.0746
+  rollout 4: FAILURE  min_dist=0.1958
+
+Epoch 8: 1/5 success (20.0%)
+  rollout 0: FAILURE  min_dist=0.1693
+  rollout 1: SUCCESS  min_dist=0.0397
+  rollout 2: FAILURE  min_dist=0.1988
+  rollout 3: FAILURE  min_dist=0.1988
+  rollout 4: FAILURE  min_dist=0.1979
+
+Epoch 9: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1988
+  rollout 1: FAILURE  min_dist=0.1988
+  rollout 2: FAILURE  min_dist=0.1988
+  rollout 3: FAILURE  min_dist=0.1988
+  rollout 4: FAILURE  min_dist=0.1988
+
+Epoch 10: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1982
+  rollout 1: FAILURE  min_dist=0.1527
+  rollout 2: FAILURE  min_dist=0.1961
+  rollout 3: FAILURE  min_dist=0.1894
+  rollout 4: FAILURE  min_dist=0.1945
+
+Epoch 11: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1946
+  rollout 1: FAILURE  min_dist=0.1866
+  rollout 2: FAILURE  min_dist=0.1612
+  rollout 3: FAILURE  min_dist=0.1714
+  rollout 4: FAILURE  min_dist=0.1926
+
+Epoch 12: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1987
+  rollout 1: FAILURE  min_dist=0.0872
+  rollout 2: FAILURE  min_dist=0.0965
+  rollout 3: FAILURE  min_dist=0.1290
+  rollout 4: FAILURE  min_dist=0.1932
+
+Epoch 13: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1533
+  rollout 1: FAILURE  min_dist=0.1620
+  rollout 2: FAILURE  min_dist=0.1586
+  rollout 3: FAILURE  min_dist=0.1964
+  rollout 4: FAILURE  min_dist=0.1542
+
+Epoch 14: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1988
+  rollout 1: FAILURE  min_dist=0.1988
+  rollout 2: FAILURE  min_dist=0.1988
+  rollout 3: FAILURE  min_dist=0.1988
+  rollout 4: FAILURE  min_dist=0.1988
+
+Epoch 15: 0/5 success (0.0%)
+  rollout 0: FAILURE  min_dist=0.1538
+  rollout 1: FAILURE  min_dist=0.1795
+  rollout 2: FAILURE  min_dist=0.1909
+  rollout 3: FAILURE  min_dist=0.1843
+  rollout 4: FAILURE  min_dist=0.1988
+
+Overall: 1/80 success (1.2%)

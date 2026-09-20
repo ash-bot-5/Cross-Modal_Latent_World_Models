@@ -1,0 +1,7 @@
+{
+  "epoch": 13,
+  "rollout_idx": 1,
+  "min_dist_a_b": 0.16196063900951568,
+  "success": false,
+  "video_path": "/home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert-only/epoch13/epoch13_rollout1_failure.mp4"
+}

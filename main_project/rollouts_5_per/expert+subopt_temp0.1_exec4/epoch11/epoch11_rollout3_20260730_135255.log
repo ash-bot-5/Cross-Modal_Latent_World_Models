@@ -1,0 +1,139 @@
+Checkpoint dir epoch: 11  Rollout: 3
+Logging to /home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_temp0.1_exec4/epoch11/epoch11_rollout3_20260730_135255.log
+Goal (fixed, steps 0-299): the green cube is touching the blue moon. the peg is touching the green cube.
+
+Checkpoint: /home/ashwink/Documents/swms/SWM_copy/training/checkpoints_clip_full_fine-tuned_with_subopt_data/epoch_011.pt
+  epoch=11  step=20232
+
+Loading CLIP ViT-L/14 (datacomp_xl_s13b_b90k) + fine-tuned clip_state_dict ...
+Parsing model identifier. Schema: None, Identifier: ViT-L-14
+Loaded built-in ViT-L-14 model config.
+Instantiating model architecture: CLIP
+Loading full pretrained weights from: /home/ashwink/.cache/huggingface/hub/models--laion--CLIP-ViT-L-14-DataComp.XL-s13B-b90K/snapshots/84c9828e63dc9a9351d1fe637c346d4c1c4db341/open_clip_pytorch_model.bin
+Final image preprocessing configuration set: {'size': (224, 224), 'mode': 'RGB', 'mean': (0.48145466, 0.4578275, 0.40821073), 'std': (0.26862954, 0.26130258, 0.27577711), 'interpolation': 'bicubic', 'resize_mode': 'shortest', 'fill_color': 0}
+Model ViT-L-14 creation process complete.
+Parsing tokenizer identifier. Schema: None, Identifier: ViT-L-14
+Attempting to load config from built-in: ViT-L-14
+Using default SimpleTokenizer.
+z_star shape: torch.Size([768])
+
+Loading action stats from /home/ashwink/full_data_5000/langtable/demos/ ...
+  lo=[-0.03372681140899658, -0.03493623435497284]  hi=[0.03496786952018738, 0.03494429588317871]
+
+Initializing LangTable env ...
+Loading URDF plane.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/workspace_real.urdf
+Loading URDF xarm/xarm6_robot_white.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/suction/cylinder_real.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/red_moon.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/red_cube.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/red_star.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/red_pentagon.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/blue_moon.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/blue_cube.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/blue_star.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/blue_pentagon.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/yellow_moon.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/yellow_cube.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/yellow_star.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/yellow_pentagon.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/green_moon.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/green_cube.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/green_star.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/green_pentagon.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/purple_moon.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/purple_cube.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/purple_star.urdf
+Loading URDF /home/ashwink/Documents/swms/.venv/lib/python3.10/site-packages/language_table/environments/utils/../../../language_table/environments/assets/blocks/purple_pentagon.urdf
+Env ready.
+
+Forced peg start: [0.42843915 0.24419614]  (green_cube=[0.40339102 0.18967466], blue_moon=[0.32039625 0.00902261])
+  dist(peg,green_cube)=0.0600  dist(peg,blue_moon)=0.2588  dist(green_cube,blue_moon)=0.1988
+
+MPPI: K=512  mppi_temperature=0.1  n_planning_itrs=9  max_action_value=1.0  warm_start_std=0.1  n_execute=4  seed=126
+
+Execution cadence: n_execute=4 -> 75 plans x 4 actions = 300 env steps (max_steps=300)
+
+step  cos(zt,z*)  cos(zt,zt-1)  |   cos(predK,z*) min/mean/max  cos(pred_sel,z*)   cos(zpred0,z*)  ||a_raw||  |  dist(peg,A)   dist(A,B)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+   0      0.1539           nan  |    0.4580/  0.6279/  0.6706            0.6706           0.6009     0.0103  |       0.0587      0.1988
+   4      0.1582        0.7851  |    0.5256/  0.6125/  0.6494            0.6494           0.5751     0.0083  |       0.0351      0.1922
+   8      0.0912        0.6466  |    0.3892/  0.4804/  0.5486            0.5486           0.3069     0.0088  |       0.0366      0.1513
+  12      0.0936        0.6181  |    0.4194/  0.6784/  0.7274            0.7274           0.4590     0.0065  |       0.0320      0.1363
+  16      0.1245        0.5299  |    0.0823/  0.1923/  0.2671            0.2671          -0.0688     0.0082  |       0.0415      0.1251
+  20      0.0802        0.7404  |   -0.2208/ -0.1159/ -0.0309           -0.0309          -0.2563     0.0157  |       0.0744      0.1251
+  24     -0.0498        0.6235  |   -0.3654/ -0.3091/ -0.2666           -0.2666          -0.3202     0.0091  |       0.1230      0.1251
+  28      0.0468        0.7919  |   -0.3147/ -0.2447/ -0.1843           -0.1843          -0.2881     0.0005  |       0.1559      0.1251
+  32      0.0167        0.8540  |   -0.2855/ -0.2319/ -0.1820           -0.1820          -0.2867     0.0037  |       0.1763      0.1251
+  36      0.0693        0.8775  |   -0.3983/ -0.3551/ -0.3130           -0.3130          -0.3327     0.0152  |       0.2010      0.1251
+  40      0.1024        0.8882  |   -0.3688/ -0.3202/ -0.2776           -0.2776          -0.3313     0.0061  |       0.2287      0.1251
+  44      0.0857        0.9057  |   -0.4659/ -0.4284/ -0.4033           -0.4033          -0.4162     0.0026  |       0.2570      0.1251
+  48      0.0793        0.9457  |   -0.4481/ -0.4092/ -0.3835           -0.3835          -0.4076     0.0089  |       0.2823      0.1251
+  52      0.0804        0.9631  |   -0.4794/ -0.4232/ -0.3962           -0.3962          -0.4128     0.0050  |       0.3001      0.1251
+  56      0.0758        0.9782  |   -0.4408/ -0.4110/ -0.3917           -0.3917          -0.4005     0.0018  |       0.3129      0.1251
+  60      0.0823        0.9711  |   -0.4373/ -0.4047/ -0.3838           -0.3838          -0.3937     0.0011  |       0.3146      0.1251
+  64      0.0584        0.9553  |   -0.4709/ -0.4262/ -0.3983           -0.3983          -0.4143     0.0021  |       0.3298      0.1251
+  68      0.0680        0.9800  |   -0.4462/ -0.4128/ -0.3875           -0.3875          -0.4020     0.0053  |       0.3352      0.1251
+  72      0.0596        0.9685  |   -0.4606/ -0.4115/ -0.3876           -0.3876          -0.4025     0.0046  |       0.3467      0.1251
+  76      0.0535        0.9741  |   -0.4663/ -0.4282/ -0.4020           -0.4020          -0.4173     0.0019  |       0.3650      0.1251
+  80      0.0403        0.9793  |   -0.4697/ -0.4320/ -0.4074           -0.4074          -0.4142     0.0004  |       0.3730      0.1251
+  84      0.0325        0.9886  |   -0.4600/ -0.4269/ -0.4034           -0.4034          -0.4162     0.0028  |       0.3787      0.1251
+  88      0.0480        0.9486  |   -0.4466/ -0.4052/ -0.3841           -0.3841          -0.3953     0.0048  |       0.3940      0.1251
+  92      0.0092        0.8668  |   -0.3142/ -0.2642/ -0.2202           -0.2202          -0.2661     0.0018  |       0.4047      0.1251
+  96      0.0153        0.9484  |   -0.3082/ -0.2315/ -0.1900           -0.1900          -0.2249     0.0017  |       0.4203      0.1251
+ 100      0.0153        1.0000  |   -0.2996/ -0.2205/ -0.1789           -0.1789          -0.2249     0.0035  |       0.4351      0.1251
+ 104      0.0156        1.0000  |   -0.2705/ -0.2137/ -0.1619           -0.1619          -0.2251     0.0035  |       0.4467      0.1251
+ 108      0.0156        1.0000  |   -0.3069/ -0.2218/ -0.1693           -0.1693          -0.2251     0.0050  |       0.4544      0.1251
+ 112      0.0153        1.0000  |   -0.3137/ -0.2167/ -0.1692           -0.1692          -0.2248     0.0087  |       0.4525      0.1251
+ 116      0.0152        1.0000  |   -0.3001/ -0.2173/ -0.1694           -0.1694          -0.2253     0.0089  |       0.4545      0.1251
+ 120      0.0153        1.0000  |   -0.3079/ -0.2221/ -0.1775           -0.1775          -0.2246     0.0044  |       0.4532      0.1251
+ 124      0.0153        1.0000  |   -0.2940/ -0.2154/ -0.1786           -0.1786          -0.2246     0.0023  |       0.4549      0.1251
+ 128      0.0153        1.0000  |   -0.2800/ -0.2181/ -0.1779           -0.1779          -0.2246     0.0050  |       0.4559      0.1251
+ 132      0.0152        1.0000  |   -0.2975/ -0.2167/ -0.1739           -0.1739          -0.2253     0.0039  |       0.4587      0.1251
+ 136      0.0153        1.0000  |   -0.3054/ -0.2143/ -0.1752           -0.1752          -0.2247     0.0029  |       0.4627      0.1251
+ 140      0.0153        1.0000  |   -0.3035/ -0.2173/ -0.1800           -0.1800          -0.2247     0.0072  |       0.4623      0.1251
+ 144      0.0153        1.0000  |   -0.3558/ -0.2234/ -0.1786           -0.1786          -0.2247     0.0053  |       0.4623      0.1251
+ 148      0.0152        1.0000  |   -0.3130/ -0.2199/ -0.1693           -0.1693          -0.2247     0.0017  |       0.4598      0.1251
+ 152      0.0152        1.0000  |   -0.3152/ -0.2230/ -0.1807           -0.1807          -0.2253     0.0014  |       0.4623      0.1251
+ 156      0.0153        1.0000  |   -0.2723/ -0.2149/ -0.1701           -0.1701          -0.2249     0.0037  |       0.4622      0.1251
+ 160      0.0155        1.0000  |   -0.2864/ -0.2182/ -0.1787           -0.1787          -0.2251     0.0061  |       0.4630      0.1251
+ 164      0.0153        1.0000  |   -0.2839/ -0.2213/ -0.1763           -0.1763          -0.2246     0.0023  |       0.4644      0.1251
+ 168      0.0153        1.0000  |   -0.3015/ -0.2119/ -0.1653           -0.1653          -0.2246     0.0064  |       0.4638      0.1251
+ 172      0.0153        1.0000  |   -0.2785/ -0.2213/ -0.1847           -0.1847          -0.2246     0.0032  |       0.4618      0.1251
+ 176      0.0153        1.0000  |   -0.2896/ -0.2161/ -0.1783           -0.1783          -0.2252     0.0089  |       0.4628      0.1251
+ 180      0.0153        1.0000  |   -0.2925/ -0.2184/ -0.1658           -0.1658          -0.2249     0.0021  |       0.4590      0.1251
+ 184      0.0153        1.0000  |   -0.2808/ -0.2227/ -0.1780           -0.1780          -0.2246     0.0028  |       0.4606      0.1251
+ 188      0.0153        1.0000  |   -0.2908/ -0.2217/ -0.1794           -0.1794          -0.2246     0.0048  |       0.4615      0.1251
+ 192      0.0152        1.0000  |   -0.2816/ -0.2152/ -0.1695           -0.1695          -0.2249     0.0051  |       0.4629      0.1251
+ 196      0.0153        1.0000  |   -0.2862/ -0.2219/ -0.1794           -0.1794          -0.2248     0.0032  |       0.4630      0.1251
+ 200      0.0153        1.0000  |   -0.3434/ -0.2287/ -0.1794           -0.1794          -0.2248     0.0076  |       0.4612      0.1251
+ 204      0.0153        1.0000  |   -0.2657/ -0.2106/ -0.1678           -0.1678          -0.2248     0.0048  |       0.4597      0.1251
+ 208      0.0153        1.0000  |   -0.3004/ -0.2215/ -0.1804           -0.1804          -0.2247     0.0076  |       0.4632      0.1251
+ 212      0.0152        1.0000  |   -0.2869/ -0.2137/ -0.1712           -0.1712          -0.2249     0.0042  |       0.4607      0.1251
+ 216      0.0153        1.0000  |   -0.2957/ -0.2169/ -0.1776           -0.1776          -0.2252     0.0037  |       0.4598      0.1251
+ 220      0.0153        1.0000  |   -0.2854/ -0.2119/ -0.1690           -0.1690          -0.2248     0.0018  |       0.4607      0.1251
+ 224      0.0153        1.0000  |   -0.2786/ -0.2136/ -0.1610           -0.1610          -0.2247     0.0054  |       0.4624      0.1251
+ 228      0.0153        1.0000  |   -0.2856/ -0.2231/ -0.1844           -0.1844          -0.2247     0.0042  |       0.4635      0.1251
+ 232      0.0153        1.0000  |   -0.2891/ -0.2164/ -0.1692           -0.1692          -0.2247     0.0025  |       0.4668      0.1251
+ 236      0.0153        1.0000  |   -0.2752/ -0.2204/ -0.1664           -0.1664          -0.2247     0.0086  |       0.4655      0.1251
+ 240      0.0153        1.0000  |   -0.2813/ -0.2108/ -0.1644           -0.1644          -0.2247     0.0117  |       0.4668      0.1251
+ 244      0.0153        1.0000  |   -0.2887/ -0.2187/ -0.1744           -0.1744          -0.2247     0.0129  |       0.4676      0.1251
+ 248      0.0153        1.0000  |   -0.2871/ -0.2124/ -0.1757           -0.1757          -0.2247     0.0044  |       0.4710      0.1251
+ 252      0.0153        1.0000  |   -0.2889/ -0.2225/ -0.1775           -0.1775          -0.2247     0.0018  |       0.4715      0.1251
+ 256      0.0153        1.0000  |   -0.2828/ -0.2144/ -0.1699           -0.1699          -0.2246     0.0057  |       0.4736      0.1251
+ 260      0.0153        1.0000  |   -0.2741/ -0.2186/ -0.1737           -0.1737          -0.2246     0.0060  |       0.4702      0.1251
+ 264      0.0153        1.0000  |   -0.3225/ -0.2246/ -0.1818           -0.1818          -0.2249     0.0045  |       0.4728      0.1251
+ 268      0.0153        1.0000  |   -0.2880/ -0.2197/ -0.1680           -0.1680          -0.2249     0.0064  |       0.4701      0.1251
+ 272      0.0153        1.0000  |   -0.3108/ -0.2239/ -0.1742           -0.1742          -0.2246     0.0027  |       0.4723      0.1251
+ 276      0.0153        1.0000  |   -0.2732/ -0.2213/ -0.1812           -0.1812          -0.2246     0.0064  |       0.4731      0.1251
+ 280      0.0153        1.0000  |   -0.2787/ -0.2109/ -0.1648           -0.1648          -0.2246     0.0086  |       0.4753      0.1251
+ 284      0.0153        1.0000  |   -0.2964/ -0.2154/ -0.1732           -0.1732          -0.2246     0.0050  |       0.4744      0.1251
+ 288      0.0153        1.0000  |   -0.2947/ -0.2143/ -0.1689           -0.1689          -0.2249     0.0048  |       0.4744      0.1251
+ 292      0.0153        1.0000  |   -0.3023/ -0.2145/ -0.1725           -0.1725          -0.2249     0.0061  |       0.4745      0.1251
+ 296      0.0153        1.0000  |   -0.3155/ -0.2116/ -0.1577           -0.1577          -0.2249     0.0020  |       0.4758      0.1251
+IMAGEIO FFMPEG_WRITER WARNING: input image is not divisible by macro_block_size=16, resizing from (320, 180) to (320, 192) to ensure video compatibility with most codecs and players. To prevent resizing, make your input image divisible by the macro_block_size or set the macro_block_size to 1 (risking incompatibility).
+
+Saved 300 frames -> /home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_temp0.1_exec4/epoch11/epoch11_rollout3_failure.mp4
+min dist(green_cube,blue_moon) over episode = 0.1251  ->  FAILURE
+Full log written to /home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_temp0.1_exec4/epoch11/epoch11_rollout3_20260730_135255.log
+Result json -> /home/ashwink/Documents/swms/SWM_copy/rollouts_5_per/expert+subopt_temp0.1_exec4/epoch11/epoch11_rollout3_result.json
